@@ -1,0 +1,13 @@
+.avis {
+  display: flex;
+  flex-direction: row;
+  .avis_texte {
+    width: 30%;
+  }
+  .avis_carou {
+    width: 30%;
+  }
+  .avis_chiffres {
+    width: 30%;
+  }
+}

@@ -1,0 +1,18 @@
+.projets-section {
+  .picture-projects {
+    height: 400px;
+    width: 800px;
+  }
+}
+.services-sections {
+  .services-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    img {
+      height: 200px;
+      width: 250px;
+    }
+  }
+}
