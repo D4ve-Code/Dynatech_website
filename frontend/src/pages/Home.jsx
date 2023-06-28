@@ -18,7 +18,7 @@ const Home = () => {
         <p>
           Depuis 17 ans, nous nous engageons aux côtés de nos clients, les
           accompagnant avec passion dans des missions variées, en quête
-          constante de leur réussite
+          constante de leur réussite !!!!!!!!!!!!!!!!
         </p>
         <h2>Les projets</h2>{" "}
         <img
