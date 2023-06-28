@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const avis = () => {
   return (
@@ -32,7 +32,7 @@ const avis = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default avis;
+export default avis

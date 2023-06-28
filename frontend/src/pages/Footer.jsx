@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
-import { BsLinkedin } from "react-icons/bs";
-import { HiMail } from "react-icons/hi";
+import { BsLinkedin } from "react-icons/bs"
+import { HiMail } from "react-icons/hi"
 
 const Footer = () => {
   return (
@@ -24,7 +24,7 @@ const Footer = () => {
         <BsLinkedin />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

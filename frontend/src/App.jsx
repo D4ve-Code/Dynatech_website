@@ -1,8 +1,8 @@
-import Home from "./pages/Home";
+import Home from "./pages/Home"
 
-import "./App.scss";
-import Footer from "./pages/Footer";
-import Header from "./pages/Header";
+import "./App.scss"
+import Footer from "./pages/Footer"
+import Header from "./pages/Header"
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Home />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

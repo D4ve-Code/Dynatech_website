@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"
 
-import franck from "../assets/images/franck.jpg";
-import flo from "../assets/images/flo.jpg";
-import nathalie from "../assets/images/nathalie.jpg";
-import gerard from "../assets/images/gerard.jpg";
+import franck from "../assets/images/franck.jpg"
+import flo from "../assets/images/flo.jpg"
+import nathalie from "../assets/images/nathalie.jpg"
+import gerard from "../assets/images/gerard.jpg"
 
 const Team = () => {
   return (
@@ -33,7 +33,7 @@ const Team = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Team;
+export default Team

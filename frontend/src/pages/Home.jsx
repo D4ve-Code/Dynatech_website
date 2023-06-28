@@ -1,11 +1,11 @@
-import React from "react";
-import Avis from "../components/Avis";
-import Team from "../components/Team";
+import React from "react"
+import Avis from "../components/Avis"
+import Team from "../components/Team"
 
-import image_projets from "../assets/images/sama.jpg";
-import image_service_coordo from "../assets/images/moda.jpeg";
-import image_service_formation from "../assets/images/formation.jpeg";
-import image_service_audit from "../assets/images/audit.jpg";
+import image_projets from "../assets/images/sama.jpg"
+import image_service_coordo from "../assets/images/moda.jpeg"
+import image_service_formation from "../assets/images/formation.jpeg"
+import image_service_audit from "../assets/images/audit.jpg"
 
 const Home = () => {
   return (
@@ -48,7 +48,7 @@ const Home = () => {
       <Avis />
       <Team />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
