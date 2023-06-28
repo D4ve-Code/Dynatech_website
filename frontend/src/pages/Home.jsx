@@ -2,10 +2,10 @@ import React from "react"
 import Avis from "../components/Avis"
 import Team from "../components/Team"
 
-import image_projets from "../assets/images/sama.jpg"
-import image_service_coordo from "../assets/images/moda.jpeg"
-import image_service_formation from "../assets/images/formation.jpeg"
-import image_service_audit from "../assets/images/audit.jpg"
+import imageprojets from "../assets/images/sama.jpg"
+import imageservicecoordo from "../assets/images/moda.jpeg"
+import imageserviceformation from "../assets/images/formation.jpeg"
+import imageserviceaudit from "../assets/images/audit.jpg"
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
         <h2>Les projets</h2>{" "}
         <img
           className="picture-projects"
-          src={image_projets}
+          src={imageprojets}
           alt="image des projets"
         ></img>
       </div>
@@ -33,15 +33,15 @@ const Home = () => {
           {" "}
           <div>
             <h2>Coordination SPS</h2>
-            <img src={image_service_coordo} alt="photo de la MODA" />
+            <img src={imageservicecoordo} alt="photo de la MODA" />
           </div>
           <div>
             <h2>Formations</h2>
-            <img src={image_service_formation} alt="photo de la MODA" />
+            <img src={imageserviceformation} alt="photo de la MODA" />
           </div>{" "}
           <div>
             <h2>Conseils & Audits</h2>
-            <img src={image_service_audit} alt="photo de la MODA" />
+            <img src={imageserviceaudit} alt="photo de la MODA" />
           </div>
         </div>
       </div>
