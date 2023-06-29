@@ -9,39 +9,44 @@ import imageserviceaudit from "../assets/images/audit.jpg"
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <h1>
-        Coordination SPS et Prévention des risques <>professionnels</>
+        Coordination SPS et Prévention des risques
+        <br /> professionnels
       </h1>
 
-      <div className="projets-section">
+      <div className="projets_section">
         <p>
           Depuis 17 ans, nous nous engageons aux côtés de nos clients, les
           accompagnant avec passion dans des missions variées, en quête
-          constante de leur réussite !!!!!!!!!!!!!!!!
+          constante de leur réussite.
         </p>
-        <h2>Les projets</h2>{" "}
-        <img
-          className="picture-projects"
-          src={imageprojets}
-          alt="image des projets"
-        ></img>
-      </div>
-      <div className="services-sections">
-        <p>Une expersite de proximité adapté à vos besoins</p>
-        <div className="services-cards">
+        <div className="projets_photo">
           {" "}
-          <div>
+          <h2>Les projets</h2>
+          <img
+            className="picture_projects"
+            src={imageprojets}
+            alt="image des projets"
+          ></img>
+        </div>
+      </div>
+      <div className="services_sections">
+        <p>Une expersite de proximité adapté à vos besoins</p>
+        <div className="services_cards">
+          <div className="service_coordination">
             <h2>Coordination SPS</h2>
             <img src={imageservicecoordo} alt="photo de la MODA" />
           </div>
-          <div>
-            <h2>Formations</h2>
-            <img src={imageserviceformation} alt="photo de la MODA" />
+          <div className="service_formation">
+            <h2>
+              Formations au poste de <br /> travail
+            </h2>
+            <img src={imageserviceformation} alt="photo de formation" />
           </div>{" "}
-          <div>
+          <div className="service_audit">
             <h2>Conseils & Audits</h2>
-            <img src={imageserviceaudit} alt="photo de la MODA" />
+            <img src={imageserviceaudit} alt="photo de réunion" />
           </div>
         </div>
       </div>

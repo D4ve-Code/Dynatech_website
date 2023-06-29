@@ -7,7 +7,7 @@ import gerard from "../assets/images/gerard.jpg"
 
 const Team = () => {
   return (
-    <div>
+    <div className="team">
       <p>
         L’équipe DYNATECH prouve au quotidien son engagement envers la qualité,
         la sécurité et votre satisfaction.Faites-nous confiance pour la réussite

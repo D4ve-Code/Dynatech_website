@@ -1,0 +1,104 @@
+.projets {
+  h1 {
+    font-family: $fontText;
+    font-weight: lighter;
+    color: $primary-color;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 30px;
+    position: relative;
+    bottom: 30px;
+  }
+  .projets_images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .projets_images_1 {
+      width: 100%;
+      position: relative;
+      img {
+        width: 80%;
+        max-width: 100%;
+        height: 600px;
+        padding: 50px 0;
+        transition: filter 0.7s;
+      }
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $background-color;
+        opacity: 0;
+        transition: opacity 0.7s;
+        font-family: $fontText;
+        font-size: 25px;
+        h3 {
+          font-size: 55px;
+          margin: 0;
+        }
+      }
+    }
+    .projets_images_1:hover img {
+      filter: brightness(0.4);
+    }
+
+    .projets_images_1:hover p {
+      opacity: 1;
+    }
+
+    .projets_images_2 {
+      width: 100%;
+      img {
+        width: 80%;
+        max-width: 100%;
+        height: 600px;
+        padding: 50px 0;
+        transition: filter 0.7s;
+      }
+      img:hover {
+        filter: brightness(0.4);
+      }
+    }
+    .projets_images_3 {
+      width: 100%;
+      img {
+        width: 80%;
+        max-width: 100%;
+        height: 600px;
+        padding: 50px 0;
+        transition: filter 0.7s;
+      }
+      img:hover {
+        filter: brightness(0.4);
+      }
+    }
+    .projets_images_4 {
+      width: 100%;
+      img {
+        width: 80%;
+        max-width: 100%;
+        height: 600px;
+        padding: 50px 0;
+        transition: filter 0.7s;
+      }
+      img:hover {
+        filter: brightness(0.4);
+      }
+    }
+    .projets_images_5 {
+      width: 100%;
+      img {
+        width: 80%;
+        max-width: 100%;
+        height: 600px;
+        padding: 50px 0;
+        transition: filter 0.7s;
+      }
+      img:hover {
+        filter: brightness(0.4);
+      }
+    }
+  }
+}

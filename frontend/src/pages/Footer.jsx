@@ -5,7 +5,7 @@ import { HiMail } from "react-icons/hi"
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footer">
       <div className="adresse">
         <h2>ADRESSE</h2>
         <p>
@@ -15,13 +15,13 @@ const Footer = () => {
       <div className="contact">
         <h2>CONTACT</h2>
         <p>
-          +33 6 85 75 65 15 <br />
+          &#40;33&#41; 06 85 75 65 15 <br />
           dynatech.conseil@gmail.com
         </p>
       </div>
       <div className="logos">
-        <HiMail />
-        <BsLinkedin />
+        <HiMail className="logo_mail" />
+        <BsLinkedin className="logo_linkedin" />
       </div>
     </div>
   )

@@ -1,18 +1,131 @@
-.projets-section {
-  .picture-projects {
-    height: 400px;
-    width: 800px;
+.home {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  h1 {
+    color: $primary-color;
+    font-family: $fontText;
+    display: block;
+    padding-left: 30px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: lighter;
+    position: relative;
+    bottom: 35px;
   }
-}
-.services-sections {
-  .services-cards {
+  .projets_section {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    img {
-      height: 200px;
-      width: 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80vw;
+    p {
+      font-family: $fontText;
+      color: $secondary-color;
+      text-align: left;
+      width: 50vw;
+      font-size: 18px;
     }
+    .projets_photo {
+      position: relative;
+      bottom: 200px;
+      h2 {
+        position: relative;
+        top: 300px;
+        font-family: $fontTitre;
+        color: #fff;
+        font-size: 70px;
+        font-weight: lighter;
+        z-index: 3;
+      }
+      .picture_projects {
+        position: relative;
+        z-index: 2;
+        height: 55vh;
+        width: 70vw;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        margin: 0;
+      }
+    }
+    .projets_photo:hover .picture_projects {
+      filter: blur(2px);
+    }
+  }
+  .services_sections {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    p {
+      font-family: $fontText;
+      color: $secondary-color;
+      text-align: center;
+      font-size: 18px;
+    }
+    .services_cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      .service_coordination {
+        h2 {
+          position: relative;
+          top: 70px;
+          font-family: $fontTitre;
+          color: #fff;
+          font-weight: lighter;
+          margin: 0;
+        }
+        img {
+          height: 200px;
+          width: 350px;
+          box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+      }
+      .service_formation {
+        position: relative;
+        bottom: 18px;
+        h2 {
+          position: relative;
+          top: 150px;
+          font-family: $fontTitre;
+          color: #fff;
+          font-weight: lighter;
+          margin: 0;
+        }
+        img {
+          height: 200px;
+          width: 350px;
+          box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+      }
+      .service_audit {
+        h2 {
+          position: relative;
+          top: 200px;
+          font-family: $fontTitre;
+          color: #fff;
+          font-weight: lighter;
+          margin: 0;
+        }
+        img {
+          height: 200px;
+          max-width: 350px;
+          box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+      }
+    }
+  }
+  .avis {
+    position: relative;
+    top: 100px;
+  }
+  .team {
+    position: relative;
+    top: 300px;
   }
 }

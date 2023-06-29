@@ -1,13 +1,109 @@
 .avis {
   display: flex;
   flex-direction: row;
+  max-width: 80vw;
+  align-items: center;
   .avis_texte {
-    width: 30%;
+    max-width: 400px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .texte1 {
+      font-family: $fontText;
+      color: $primary-color;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: left;
+    }
+    .texte2 {
+      font-family: $fontText;
+      color: $secondary-color;
+      text-align: left;
+    }
+    button {
+      all: unset;
+      display: block;
+      background-color: $background-color;
+      color: $primary-color;
+      font-weight: bold;
+      font-size: 20px;
+      border: 1px solid $secondary-color;
+      border-radius: 17px;
+      padding: 10px 20px;
+      cursor: pointer;
+      max-width: 160px;
+      text-align: center;
+    }
   }
-  .avis_carou {
-    width: 30%;
-  }
-  .avis_chiffres {
-    width: 30%;
+  .avis_right {
+    padding-left: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .avis_carou {
+    }
+    .avis_chiffres {
+      display: flex;
+      * {
+        margin: 0;
+      }
+      .avis_chiffres1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 30px;
+        h3 {
+          font-family: $fontText;
+          color: $primary-color;
+          font-weight: bold;
+          font-size: 30px;
+        }
+        p {
+          font-family: $fontText;
+          color: $secondary-color;
+          text-align: left;
+          max-width: 100px;
+        }
+      }
+      .avis_chiffres2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 30px;
+
+        h3 {
+          font-family: $fontText;
+          color: $primary-color;
+          font-weight: bold;
+          font-size: 30px;
+        }
+        p {
+          font-family: $fontText;
+          color: $secondary-color;
+          text-align: left;
+          max-width: 100px;
+        }
+      }
+      .avis_chiffres3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 30px;
+
+        h3 {
+          font-family: $fontText;
+          color: $primary-color;
+          font-weight: bold;
+          font-size: 30px;
+        }
+        p {
+          font-family: $fontText;
+          color: $secondary-color;
+          text-align: left;
+          max-width: 100px;
+        }
+      }
+    }
   }
 }
