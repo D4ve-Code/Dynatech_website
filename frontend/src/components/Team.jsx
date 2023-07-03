@@ -14,22 +14,41 @@ const Team = () => {
         de vos projets.
       </p>
       <div className="portraits">
-        {" "}
-        <div className="portrait1">
-          <img src={franck} alt="portrait de franck" />
-          <h2>Franck LEBREUIL</h2>
+        <div className="portraits_line_1">
+          <div className="portrait1">
+            <img src={franck} alt="portrait de franck" />
+            <h2>
+              Franck
+              <br />
+              LEBREUIL
+            </h2>
+          </div>
+          <div className="portrait2">
+            <img src={flo} alt="portrait de flo" />
+            <h2>
+              Florian
+              <br />
+              SIRODOT
+            </h2>
+          </div>
         </div>
-        <div className="portrait2">
-          <img src={flo} alt="portrait de flo" />
-          <h2>Florian SIRODOT</h2>
-        </div>{" "}
-        <div className="portrait3">
-          <img src={nathalie} alt="portrait de nathalie" />
-          <h2>Nathalie YIN</h2>
-        </div>{" "}
-        <div className="portrait4">
-          <img src={gerard} alt="portrait de gerard" />
-          <h2>Gérard DION</h2>
+        <div className="portraits_line_2">
+          <div className="portrait3">
+            <img src={nathalie} alt="portrait de nathalie" />
+            <h2>
+              Nathalie
+              <br />
+              YIN
+            </h2>
+          </div>
+          <div className="portrait4">
+            <img src={gerard} alt="portrait de gerard" />
+            <h2>
+              Gérard
+              <br />
+              DION
+            </h2>
+          </div>
         </div>
       </div>
     </div>
