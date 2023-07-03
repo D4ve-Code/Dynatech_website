@@ -1,6 +1,7 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
-const avis = () => {
+const Avis = () => {
   return (
     <div className="avis">
       <div className="avis_texte">
@@ -12,7 +13,10 @@ const avis = () => {
           accompagnant avec passion dans des missions variées, en quête
           constante de leur réussite
         </p>
-        <button>Leurs projets</button>
+        <Link to="/projets">
+          {" "}
+          <button className="button_fonction">Leurs projets</button>
+        </Link>
       </div>
       <div className="avis_right">
         <div className="avis_carou">
@@ -37,4 +41,4 @@ const avis = () => {
   )
 }
 
-export default avis
+export default Avis

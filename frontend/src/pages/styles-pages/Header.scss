@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: $background-color;
   h1 {
     color: $primary-color;
     font-family: $fontTitre;
@@ -23,11 +27,60 @@
       li {
         padding: 0 50px;
         font-size: 20px;
+        text-decoration: none;
+        color: $primary-color;
       }
       li:hover {
         color: $secondary-color;
         cursor: pointer;
       }
+      a.underline-hover-effect {
+        text-decoration: none;
+        color: inherit;
+      }
+      .underline-hover-effect {
+        display: inline-block;
+        padding-bottom: 0.25rem; /* defines the space between text and underline */
+        position: relative;
+      }
+
+      .underline-hover-effect::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: $secondary-color;
+        transition: width 0.25s ease-out;
+      }
+      .underline-hover-effect:hover::before {
+        width: 100%;
+      }
+
+      // a {
+      //   color: $primary-color;
+      //   text-decoration: none;
+      //   letter-spacing: 0.05em;
+      //   padding: 15px 20px;
+      //   position: relative;
+      // }
+      // a:after {
+      //   background: none repeat scroll 0 0 transparent;
+      //   bottom: 0;
+      //   content: "";
+      //   display: block;
+      //   height: 1px;
+      //   left: 50%;
+      //   position: absolute;
+      //   background: $secondary-color;
+      //   transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      //   width: 0;
+      // }
+      // a:hover:after {
+      //   width: 100%;
+      //   left: 0;
+      // }
     }
   }
 }

@@ -3,6 +3,8 @@
 @import "./pages//styles-pages/Footer.scss";
 @import "./pages/styles-pages/Header.scss";
 @import "./pages/styles-pages/Projets.scss";
+@import "./pages/styles-pages/Services.scss";
+@import "./pages/styles-pages/Agence.scss";
 @import "./components/styles-components/Avis.scss";
 @import "./components/styles-components/Team.scss";
 
@@ -22,9 +24,11 @@ body {
   }
   background-color: $background-color;
 }
-
+.header {
+  margin-bottom: 40px;
+}
 .footer {
-  margin-top: 500px;
+  margin-top: 400px;
 }
 
 @font-face {

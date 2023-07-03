@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 import imageprojets1 from "../assets/images/imageprojet1.jpg"
 import imageprojets2 from "../assets/images/imageprojet2.jpg"
@@ -7,6 +7,9 @@ import imageprojets4 from "../assets/images/imageprojet4.jpg"
 import imageprojets5 from "../assets/images/imageprojet5.jpg"
 
 const Projets = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="projets">
       <h1>Nos Projets</h1>

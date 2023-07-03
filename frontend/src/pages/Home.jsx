@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "react-router-dom"
+
 import Avis from "../components/Avis"
 import Team from "../components/Team"
 
@@ -11,8 +13,10 @@ const Home = () => {
   return (
     <div className="home">
       <h1>
-        Coordination SPS et Prévention des risques
-        <br /> professionnels
+        <a href="" className="underline-hover-effect">
+          Coordination SPS et Prévention des risques
+          <br /> professionnels
+        </a>
       </h1>
 
       <div className="projets_section">
@@ -22,13 +26,14 @@ const Home = () => {
           constante de leur réussite.
         </p>
         <div className="projets_photo">
-          {" "}
-          <h2>Les projets</h2>
-          <img
-            className="picture_projects"
-            src={imageprojets}
-            alt="image des projets"
-          ></img>
+          <Link to="/projets">
+            <h2>Les projets</h2>
+            <img
+              className="picture_projects"
+              src={imageprojets}
+              alt="image des projets"
+            ></img>
+          </Link>
         </div>
       </div>
       <div className="services_sections">
@@ -43,7 +48,7 @@ const Home = () => {
               Formations au poste de <br /> travail
             </h2>
             <img src={imageserviceformation} alt="photo de formation" />
-          </div>{" "}
+          </div>
           <div className="service_audit">
             <h2>Conseils & Audits</h2>
             <img src={imageserviceaudit} alt="photo de réunion" />

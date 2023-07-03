@@ -5,6 +5,9 @@
     text-align: center;
     font-size: 18px;
     margin: 0;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .portraits {
     display: flex;
@@ -15,11 +18,12 @@
     .portraits_line_1 {
       display: flex;
       flex-direction: row;
+      padding: 70px 0 50px 0;
       img {
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
         border-radius: 50%;
-        padding: 0 100px;
+        padding: 0 200px;
       }
       h2 {
         font-family: $fontTitre;
@@ -30,10 +34,10 @@
       display: flex;
       flex-direction: row;
       img {
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
         border-radius: 50%;
-        padding: 0 100px;
+        padding: 0 200px;
       }
       h2 {
         font-family: $fontTitre;

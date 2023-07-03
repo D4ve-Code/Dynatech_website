@@ -1,0 +1,137 @@
+.agence {
+  h1 {
+    font-family: $fontText;
+    font-weight: lighter;
+    color: $primary-color;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 30px;
+    position: relative;
+    bottom: 30px;
+  }
+  .first_p {
+    font-family: $fontText;
+    color: $secondary-color;
+    text-align: center;
+    width: 70vw;
+    font-size: 25px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .portraits {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    .portraits_line_1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 70px 0 100px 0;
+      .portrait1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 20%;
+        padding-right: 200px;
+        img {
+          height: 200px;
+          width: 200px;
+          border-radius: 50%;
+          padding: 0 200px;
+
+          object-fit: cover;
+        }
+        p {
+          padding-top: 30px;
+
+          font-family: $fontText;
+          color: $secondary-color;
+          .nom {
+            font-family: $fontTitre;
+            color: $primary-color;
+            font-size: 22px;
+          }
+        }
+      }
+      .portrait2 {
+        max-width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          height: 200px;
+          width: 200px;
+          border-radius: 50%;
+          padding: 0 200px;
+
+          object-fit: cover;
+        }
+        p {
+          padding-top: 30px;
+
+          font-family: $fontText;
+          color: $secondary-color;
+          .nom {
+            font-family: $fontTitre;
+            color: $primary-color;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    .portraits_line_2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .portrait3 {
+        max-width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 200px;
+        img {
+          height: 200px;
+          width: 200px;
+          border-radius: 50%;
+          padding: 0 200px;
+
+          object-fit: cover;
+        }
+        p {
+          padding-top: 30px;
+
+          font-family: $fontText;
+          color: $secondary-color;
+          .nom {
+            font-family: $fontTitre;
+            color: $primary-color;
+            font-size: 22px;
+          }
+        }
+      }
+      .portrait4 {
+        max-width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          height: 200px;
+          width: 200px;
+          border-radius: 50%;
+          padding: 0 200px;
+        }
+        p {
+          padding-top: 30px;
+          font-family: $fontText;
+          color: $secondary-color;
+          .nom {
+            font-family: $fontTitre;
+            color: $primary-color;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}

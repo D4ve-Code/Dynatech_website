@@ -1,0 +1,171 @@
+.services {
+  h1 {
+    font-family: $fontText;
+    font-weight: lighter;
+    color: $primary-color;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 30px;
+    position: relative;
+    bottom: 30px;
+  }
+  .services_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .first_p {
+      font-family: $fontText;
+      color: $secondary-color;
+      text-align: center;
+      width: 50vw;
+      font-size: 25px;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .services_coordination {
+      .coordination_photo {
+        position: relative;
+        h3 {
+          position: relative;
+          top: 60px;
+          font-family: $fontTitre;
+          color: #fff;
+          font-size: 40px;
+          font-weight: lighter;
+          z-index: 3;
+        }
+        img {
+          position: relative;
+          bottom: 60px;
+          z-index: 2;
+          height: 10vh;
+          width: 70vw;
+          box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+          margin: 0;
+          object-fit: cover;
+          filter: brightness(0.5);
+        }
+      }
+      p {
+        font-family: $fontText;
+        color: $secondary-color;
+        text-align: center;
+        width: 50vw;
+        font-size: 18px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .service_formation {
+      .formation_photo {
+        position: relative;
+        h3 {
+          position: relative;
+          top: 60px;
+          font-family: $fontTitre;
+          color: #fff;
+          font-size: 40px;
+          font-weight: lighter;
+          z-index: 3;
+        }
+        img {
+          position: relative;
+          bottom: 60px;
+          z-index: 2;
+          height: 10vh;
+          width: 70vw;
+          box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+          margin: 0;
+          object-fit: cover;
+          filter: brightness(0.5);
+        }
+      }
+      p {
+        font-family: $fontText;
+        color: $secondary-color;
+        text-align: center;
+        width: 50vw;
+        font-size: 18px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .liste_formation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .liste1 {
+          font-family: $fontText;
+          color: $primary-color;
+          font-size: 20px;
+          padding: 0;
+          width: 500px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          li {
+            font-family: $fontText;
+            color: $secondary-color;
+            text-align: center;
+            width: 50vw;
+            font-size: 18px;
+          }
+        }
+        .liste2 {
+          font-family: $fontText;
+          color: $primary-color;
+          font-size: 20px;
+          padding: 0;
+          width: 500px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          li {
+            font-family: $fontText;
+            color: $secondary-color;
+            text-align: center;
+            width: 50vw;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .services_conseil {
+      .conseil_photo {
+        position: relative;
+        h3 {
+          position: relative;
+          top: 60px;
+          font-family: $fontTitre;
+          color: #fff;
+          font-size: 40px;
+          font-weight: lighter;
+          z-index: 3;
+        }
+        img {
+          position: relative;
+          bottom: 60px;
+          z-index: 2;
+          height: 10vh;
+          width: 70vw;
+          box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+          margin: 0;
+          object-fit: cover;
+          filter: brightness(0.5);
+        }
+      }
+      p {
+        font-family: $fontText;
+        color: $secondary-color;
+        text-align: center;
+        width: 50vw;
+        font-size: 18px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
