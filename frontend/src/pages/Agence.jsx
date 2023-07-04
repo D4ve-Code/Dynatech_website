@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 import franck from "../assets/images/franck.jpg"
 import flo from "../assets/images/flo.jpg"
@@ -6,13 +6,16 @@ import nathalie from "../assets/images/nathalie.jpg"
 import gerard from "../assets/images/gerard.jpg"
 
 const Agence = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="agence">
       <h1>L'agence</h1>
       <p className="first_p">
         L’équipe DYNATECH prouve au quotidien son engagement envers la qualité,
-        la sécurité et votre satisfaction.Faites-nous confiance pour la réussite
-        de vos projets.
+        la sécurité et votre satisfaction. Faites-nous confiance pour la
+        réussite de vos projets.
       </p>
       <div className="portraits">
         <div className="portraits_line_1">
@@ -54,7 +57,7 @@ const Agence = () => {
               <span className="nom">Gérard DION</span> notre "couteau suisse"
               QSE, est membre de notre équipe depuis 3 ans. Son expertise
               s'étend notamment à l'impact environnemental et aux certifications
-              de type ISO, apportant ainsi une valeur ajoutée à nos services."
+              de type ISO, apportant ainsi une valeur ajoutée à nos services.
             </p>
           </div>
         </div>

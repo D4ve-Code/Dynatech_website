@@ -1,10 +1,13 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 import imagecoordo from "../assets/images/moda.jpeg"
 import imageformation from "../assets/images/formation.jpeg"
 import imageconseil from "../assets/images/audit.jpg"
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="services">
       <h1>Les services</h1>

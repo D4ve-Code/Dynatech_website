@@ -1,6 +1,9 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
+import logolidl from "../assets/images/logo_lidl.png"
+import photolidl from "../assets/images/photo_lidl2.jpg"
+
 const Avis = () => {
   return (
     <div className="avis">
@@ -19,8 +22,29 @@ const Avis = () => {
         </Link>
       </div>
       <div className="avis_right">
-        <div className="avis_carou">
-          <h1>ici ira le carousel des avis</h1>
+        <div className="avis_card">
+          <div className="card_left">
+            <div className="card_left_image_text">
+              <img src={logolidl} alt="image du logo" />
+              <p className="card_text">
+                "A nos côtés en mission CSPS pour un accompagnement
+                personnalisé"
+              </p>
+              <p className="card_name">
+                Mohamed El Tik, Directeur technique LIDL
+              </p>
+            </div>
+
+            <div className="bullets">
+              <div className="bullet1"></div>
+              <div className="bullet2"></div>
+              <div className="bullet3"></div>
+              <div className="bullet4"></div>
+            </div>
+          </div>
+          <div className="card_right">
+            <img src={photolidl} alt="photo d'un magasin" />
+          </div>
         </div>
         <div className="avis_chiffres">
           <div className="avis_chiffres1">

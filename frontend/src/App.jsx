@@ -6,6 +6,8 @@ import Footer from "./pages/Footer"
 import Header from "./pages/Header"
 import Services from "./pages/Services"
 import Agence from "./pages/Agence"
+
+import Test from "./components/Test"
 import "./App.scss"
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
         <Route path="/projets" element={<Projets />} />
         <Route path="/services" element={<Services />} />
         <Route path="/agence" element={<Agence />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
       <div className="footer_scroll">
         {" "}
