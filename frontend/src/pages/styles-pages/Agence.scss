@@ -1,134 +1,270 @@
-.agence {
-  h1 {
-    font-family: $fontText;
-    font-weight: lighter;
-    color: $primary-color;
-    font-size: 25px;
-    text-align: left;
-    padding-left: 30px;
-    position: relative;
-    bottom: 30px;
-  }
-  .first_p {
-    font-family: $fontText;
-    color: $secondary-color;
-    text-align: center;
-    width: 70vw;
-    font-size: 25px;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .portraits {
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    .portraits_line_1 {
+@media screen and (min-width: 600px) {
+  .agence {
+    h1 {
+      font-family: $fontText;
+      font-weight: lighter;
+      color: $primary-color;
+      font-size: 25px;
+      text-align: left;
+      padding-left: 30px;
+      position: relative;
+      bottom: 30px;
+    }
+    .first_p {
+      font-family: $fontText;
+      color: $secondary-color;
+      text-align: center;
+      width: 70vw;
+      font-size: 25px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .portraits {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 70px 0 100px 0;
-      .portrait1 {
+      flex-direction: column;
+      padding-top: 50px;
+      .portraits_line_1 {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 20%;
-        padding-right: 200px;
-        img {
-          height: 200px;
-          width: 200px;
-          border-radius: 50%;
-          padding: 0 200px;
+        flex-direction: row;
+        justify-content: center;
+        padding: 70px 0 100px 0;
+        .portrait1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 20%;
+          padding-right: 200px;
+          img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            padding: 0 200px;
 
-          object-fit: cover;
+            object-fit: cover;
+          }
+          p {
+            padding-top: 30px;
+
+            font-family: $fontText;
+            color: $secondary-color;
+            .nom {
+              font-family: $fontTitre;
+              color: $primary-color;
+              font-size: 22px;
+            }
+          }
         }
-        p {
-          padding-top: 30px;
+        .portrait2 {
+          max-width: 20%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            padding: 0 200px;
 
-          font-family: $fontText;
-          color: $secondary-color;
-          .nom {
-            font-family: $fontTitre;
-            color: $primary-color;
-            font-size: 22px;
+            object-fit: cover;
+          }
+          p {
+            padding-top: 30px;
+
+            font-family: $fontText;
+            color: $secondary-color;
+            .nom {
+              font-family: $fontTitre;
+              color: $primary-color;
+              font-size: 22px;
+            }
           }
         }
       }
-      .portrait2 {
-        max-width: 20%;
+      .portraits_line_2 {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        img {
-          height: 200px;
-          width: 200px;
-          border-radius: 50%;
-          padding: 0 200px;
+        flex-direction: row;
+        justify-content: center;
+        .portrait3 {
+          max-width: 20%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-right: 200px;
+          img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            padding: 0 200px;
 
-          object-fit: cover;
+            object-fit: cover;
+          }
+          p {
+            padding-top: 30px;
+
+            font-family: $fontText;
+            color: $secondary-color;
+            .nom {
+              font-family: $fontTitre;
+              color: $primary-color;
+              font-size: 22px;
+            }
+          }
         }
-        p {
-          padding-top: 30px;
-
-          font-family: $fontText;
-          color: $secondary-color;
-          .nom {
-            font-family: $fontTitre;
-            color: $primary-color;
-            font-size: 22px;
+        .portrait4 {
+          max-width: 20%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            padding: 0 200px;
+          }
+          p {
+            padding-top: 30px;
+            font-family: $fontText;
+            color: $secondary-color;
+            .nom {
+              font-family: $fontTitre;
+              color: $primary-color;
+              font-size: 22px;
+            }
           }
         }
       }
     }
-    .portraits_line_2 {
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .agence {
+    h1 {
+      font-family: $fontText;
+      font-weight: lighter;
+      color: $primary-color;
+      font-size: 20px;
+      text-align: left;
+      padding-left: 30px;
+      position: relative;
+      bottom: 30px;
+    }
+    .first_p {
+      font-family: $fontText;
+      color: $secondary-color;
+      text-align: center;
+      width: 90vw;
+      font-size: 18px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .portraits {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      .portrait3 {
-        max-width: 20%;
+      flex-direction: column;
+      padding-top: 50px;
+      .portraits_line_1 {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-right: 200px;
-        img {
-          height: 200px;
-          width: 200px;
-          border-radius: 50%;
-          padding: 0 200px;
-
-          object-fit: cover;
+        flex-direction: row;
+        justify-content: center;
+        padding: 70px 0 100px 0;
+        .portrait1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 45%;
+          padding-right: 10px;
+          img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          p {
+            padding-top: 30px;
+            font-family: $fontText;
+            color: $secondary-color;
+            font-size: 14px;
+            .nom {
+              font-family: $fontTitre;
+              color: $primary-color;
+              font-size: 18px;
+            }
+          }
         }
-        p {
-          padding-top: 30px;
-
-          font-family: $fontText;
-          color: $secondary-color;
-          .nom {
-            font-family: $fontTitre;
-            color: $primary-color;
-            font-size: 22px;
+        .portrait2 {
+          max-width: 45%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          p {
+            padding-top: 30px;
+            font-family: $fontText;
+            color: $secondary-color;
+            font-size: 14px;
+            .nom {
+              font-family: $fontTitre;
+              color: $primary-color;
+              font-size: 18px;
+            }
           }
         }
       }
-      .portrait4 {
-        max-width: 20%;
+      .portraits_line_2 {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        img {
-          height: 200px;
-          width: 200px;
-          border-radius: 50%;
-          padding: 0 200px;
+        flex-direction: row;
+        justify-content: center;
+        .portrait3 {
+          max-width: 45%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-right: 10px;
+          img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            padding: 0 100px;
+            object-fit: cover;
+          }
+          p {
+            padding-top: 30px;
+            font-family: $fontText;
+            color: $secondary-color;
+            font-size: 14px;
+            .nom {
+              font-family: $fontTitre;
+              color: $primary-color;
+              font-size: 18px;
+            }
+          }
         }
-        p {
-          padding-top: 30px;
-          font-family: $fontText;
-          color: $secondary-color;
-          .nom {
-            font-family: $fontTitre;
-            color: $primary-color;
-            font-size: 22px;
+        .portrait4 {
+          max-width: 45%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+          }
+          p {
+            padding-top: 30px;
+            font-family: $fontText;
+            color: $secondary-color;
+            font-size: 14px;
+            .nom {
+              font-family: $fontTitre;
+              color: $primary-color;
+              font-size: 18px;
+            }
           }
         }
       }

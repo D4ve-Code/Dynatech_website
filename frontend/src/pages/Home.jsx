@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link } from "react-router-dom"
 
 import Avis from "../components/Avis"
@@ -10,6 +10,9 @@ import imageserviceformation from "../assets/images/formation.jpeg"
 import imageserviceaudit from "../assets/images/audit.jpg"
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <h1 className="home_title_top">
@@ -30,7 +33,7 @@ const Home = () => {
                 className="picture_projects"
                 src={imageprojets}
                 alt="image des projets"
-              ></img>
+              />
             </Link>
           </div>
         </div>
@@ -38,18 +41,26 @@ const Home = () => {
           <p>Une expersite de proximité adapté à vos besoins</p>
           <div className="services_cards">
             <div className="service_coordination">
-              <h2>Coordination SPS</h2>
-              <img src={imageservicecoordo} alt="photo de la MODA" />
+              <Link to="/services">
+                {" "}
+                <h2>Coordination SPS</h2>
+                <img src={imageservicecoordo} alt="photo de la MODA" />
+              </Link>
             </div>
             <div className="service_formation">
-              <h2>
-                Formations au poste de <br /> travail
-              </h2>
-              <img src={imageserviceformation} alt="photo de formation" />
+              <Link to="/services">
+                {" "}
+                <h2>
+                  Formations au poste de <br /> travail
+                </h2>
+                <img src={imageserviceformation} alt="photo de formation" />
+              </Link>
             </div>
             <div className="service_audit">
-              <h2>Conseils & Audits</h2>
-              <img src={imageserviceaudit} alt="photo de réunion" />
+              <Link to="/services">
+                <h2>Conseils & Audits</h2>
+                <img src={imageserviceaudit} alt="photo de réunion" />
+              </Link>
             </div>
           </div>
         </div>

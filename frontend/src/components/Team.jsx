@@ -10,8 +10,9 @@ const Team = () => {
     <div className="team">
       <p>
         L’équipe DYNATECH prouve au quotidien son engagement envers la qualité,
-        la sécurité et votre satisfaction.Faites-nous confiance pour la réussite
-        de vos projets.
+        la sécurité et votre satisfaction.
+        <br />
+        Faites-nous confiance pour la réussite de vos projets.
       </p>
       <div className="portraits">
         <div className="portraits_line_1">

@@ -25,6 +25,12 @@ const Projets = () => {
         </div>
         <div className="projets_images_2">
           <img src={imageprojets2} alt="image du projet 2" />
+          <p>
+            <h3>Ancien siège de l'HUMA</h3> <br />
+            Coordination SPS <br />
+            Maître d'ouvrage : AVIVA // AMO : Théop <br />
+            Architecte : B-archi
+          </p>
         </div>
         <div className="projets_images_3">
           <img src={imageprojets3} alt="image du projet 3" />
