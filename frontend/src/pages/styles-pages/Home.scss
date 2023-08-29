@@ -37,13 +37,13 @@
         h2 {
           position: relative;
           top: 320px;
-          left: 470px;
+          left: 350px;
           font-family: $fontTitre;
           color: $secondary-color;
           font-size: 70px;
           font-weight: lighter;
           z-index: 3;
-          width: 30%;
+          width: 40%;
         }
         .picture_projects {
           position: relative;
@@ -64,6 +64,7 @@
       margin-left: auto;
       margin-right: auto;
       width: 80vw;
+      padding: 100px 0;
       p {
         font-family: $fontText;
         color: $secondary-color;
@@ -91,7 +92,10 @@
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
           }
         }
-        .service_formation {
+        .service_coordination:hover {
+          filter: brightness(0.9);
+        }
+        .service_prevention {
           position: relative;
           bottom: 18px;
           h2 {
@@ -109,6 +113,9 @@
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
           }
         }
+        .service_prevention:hover {
+          filter: brightness(0.9);
+        }
         .service_audit {
           h2 {
             position: relative;
@@ -124,6 +131,9 @@
             max-width: 400px;
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
           }
+        }
+        .service_audit:hover {
+          filter: brightness(0.9);
         }
       }
     }
@@ -161,6 +171,8 @@
   //   width: 100%;
   // }
 }
+
+// MOBIIIIIIIIIIIIIIIIILE
 @media screen and (max-width: 600px) {
   .home_title_top {
     color: $primary-color;
@@ -253,7 +265,7 @@
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
           }
         }
-        .service_formation {
+        .service_prevention {
           position: relative;
           bottom: 18px;
           h2 {

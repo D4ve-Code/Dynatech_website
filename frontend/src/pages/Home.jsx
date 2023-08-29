@@ -20,6 +20,33 @@ const Home = () => {
         <br /> professionnels
       </h1>
       <div className="home">
+        <div className="services_sections">
+          <p>Une expersite de proximité adapté à vos besoins</p>
+          <div className="services_cards">
+            <div className="service_coordination">
+              <Link to="/services">
+                {" "}
+                <h2>Coordination SPS</h2>
+                <img src={imageservicecoordo} alt="photo de la MODA" />
+              </Link>
+            </div>
+            <div className="service_prevention">
+              <Link to="/services">
+                {" "}
+                <h2>
+                  Mission prévention QHSE <br /> chantier
+                </h2>
+                <img src={imageserviceformation} alt="photo de formation" />
+              </Link>
+            </div>
+            <div className="service_audit">
+              <Link to="/services">
+                <h2>Formations & Audits</h2>
+                <img src={imageserviceaudit} alt="photo de réunion" />
+              </Link>
+            </div>
+          </div>
+        </div>
         <div className="projets_section">
           <p>
             Depuis 17 ans, nous nous engageons aux côtés de nos clients, les
@@ -37,33 +64,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="services_sections">
-          <p>Une expersite de proximité adapté à vos besoins</p>
-          <div className="services_cards">
-            <div className="service_coordination">
-              <Link to="/services">
-                {" "}
-                <h2>Coordination SPS</h2>
-                <img src={imageservicecoordo} alt="photo de la MODA" />
-              </Link>
-            </div>
-            <div className="service_formation">
-              <Link to="/services">
-                {" "}
-                <h2>
-                  Formations au poste de <br /> travail
-                </h2>
-                <img src={imageserviceformation} alt="photo de formation" />
-              </Link>
-            </div>
-            <div className="service_audit">
-              <Link to="/services">
-                <h2>Conseils & Audits</h2>
-                <img src={imageserviceaudit} alt="photo de réunion" />
-              </Link>
-            </div>
-          </div>
-        </div>
+
         <Avis />
         <Team />
       </div>

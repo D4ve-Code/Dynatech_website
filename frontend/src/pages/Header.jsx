@@ -22,17 +22,25 @@ const Header = () => {
       </Link>
       <div className="menu-desktop">
         <ul>
-          <Link to="/projets">
+          <Link to="/">
             <li>
               <a href="#" className="underline-hover-effect">
-                Les projets
+                Accueil
               </a>
             </li>
           </Link>
+
           <Link to="/services">
             <li>
               <a href="#" className="underline-hover-effect">
                 Les services
+              </a>
+            </li>
+          </Link>
+          <Link to="/projets">
+            <li>
+              <a href="#" className="underline-hover-effect">
+                Les projets
               </a>
             </li>
           </Link>
@@ -67,7 +75,17 @@ const Header = () => {
                     setIsOpen(false)
                   }}
                 >
-                  <a href="#">Home</a>
+                  <a href="#">Accueil</a>
+                </li>
+              </Link>
+
+              <Link to={"/services"}>
+                <li
+                  onClick={() => {
+                    setIsOpen(false)
+                  }}
+                >
+                  <a href="#">Nos services</a>
                 </li>
               </Link>
               <Link to={"/projets"}>
@@ -77,15 +95,6 @@ const Header = () => {
                   }}
                 >
                   <a href="#">Nos projets</a>
-                </li>
-              </Link>
-              <Link to={"/services"}>
-                <li
-                  onClick={() => {
-                    setIsOpen(false)
-                  }}
-                >
-                  <a href="#">Les services</a>
                 </li>
               </Link>
               <Link to="/agence">
@@ -101,8 +110,13 @@ const Header = () => {
                 <li
                   onClick={() => {
                     setIsOpen(false)
-                    const element = document.getElementById("bottom-of-page") // Récupère l'élément en bas de la page
-                    element.scrollIntoView({ behavior: "smooth" }) // Fait défiler la page vers cet élément
+                    const element = document.getElementById("bottom_of_page")
+                    if (element) {
+                      window.scrollTo({
+                        top: element.offsetTop,
+                        behavior: "smooth",
+                      })
+                    }
                   }}
                 >
                   <a href="#">Contact</a>

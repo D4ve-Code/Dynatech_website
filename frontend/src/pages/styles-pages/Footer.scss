@@ -30,6 +30,20 @@
       margin: 2px 0 20px 0;
     }
   }
+  .recrutement {
+    h2 {
+      font-family: $fontText;
+      color: $primary-color;
+      font-weight: bolder;
+      font-size: 20px;
+      margin: 0;
+    }
+    p {
+      font-family: $fontTitre;
+      color: $secondary-color;
+      margin: 2px 0 20px 0;
+    }
+  }
   .logos {
     color: $primary-color;
     margin: 30px 0;

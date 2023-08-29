@@ -17,6 +17,12 @@ const Agence = () => {
         la sécurité et votre satisfaction. Faites-nous confiance pour la
         réussite de vos projets.
       </p>
+      <div className="valeurs">
+        <p># Partenariat</p>
+        <p># Experience</p>
+        <p># Accompagnement</p>
+        <p># Valeur ajoutée</p>
+      </div>
       <div className="portraits">
         <div className="portraits_line_1">
           <div className="portrait1">

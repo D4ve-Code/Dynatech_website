@@ -10,7 +10,7 @@ const Services = () => {
   }, [])
   return (
     <div className="services">
-      <h1>Les services</h1>
+      <h1>Nos services disponibles</h1>
       <div className="services_page">
         <p className="first_p">
           Une expertise de proximité adapté à vos besoins.
@@ -29,7 +29,7 @@ const Services = () => {
         </div>
         <div className="service_formation">
           <div className="formation_photo">
-            <h3>Formation au poste de travail</h3>
+            <h3>Mission prévention QHSE</h3>
             <img src={imageformation} alt="image de formation" />
           </div>
           <p>
@@ -56,7 +56,7 @@ const Services = () => {
         </div>
         <div className="services_conseil">
           <div className="conseil_photo">
-            <h3>Conseils et Audit</h3>
+            <h3>Formations et Audit</h3>
             <img src={imageconseil} alt="image d'un audit" />
           </div>
           <p>

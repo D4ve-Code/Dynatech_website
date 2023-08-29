@@ -19,6 +19,16 @@
       max-width: 100%;
       margin-left: auto;
       margin-right: auto;
+      padding-bottom: 30px;
+    }
+    .valeurs {
+      p {
+        display: flex;
+        justify-content: center;
+        font-family: $fontText;
+        color: $primary-color;
+        font-size: 25px;
+      }
     }
     .portraits {
       display: flex;
@@ -158,6 +168,15 @@
       font-size: 18px;
       margin-left: auto;
       margin-right: auto;
+    }
+    .valeurs {
+      p {
+        display: flex;
+        justify-content: center;
+        font-family: $fontText;
+        color: $primary-color;
+        font-size: 25px;
+      }
     }
     .portraits {
       display: flex;

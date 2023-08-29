@@ -15,12 +15,12 @@
     //   font-size: 50px;
     // }
     img {
-      width: 120px;
+      width: 150px;
       height: 120px;
       padding: 20px 0 0 30px;
     }
     .menu-desktop {
-      width: 60%;
+      width: 70%;
       display: flex;
       justify-content: center;
       ul {
@@ -112,7 +112,7 @@
     //   font-size: 30px;
     // }
     img {
-      width: 70px;
+      width: 85px;
       height: 70px;
       padding: 20px 0 0 30px;
     }
@@ -183,13 +183,13 @@
             text-decoration: none;
             font-family: $fontTitre;
             color: $primary-color;
-            text-shadow: 1px 1px 1px $primary-color;
+            // text-shadow: 1px 1px 1px $primary-color;
           }
           :nth-child(n):visited {
             text-decoration: none;
             color: $primary-color;
             font-family: $fontTitre;
-            text-shadow: 1px 1px 1px $primary-color;
+            // text-shadow: 1px 1px 1px $primary-color;
           }
           :nth-child(n):hover {
             color: $primary-color;

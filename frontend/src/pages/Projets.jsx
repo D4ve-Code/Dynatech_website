@@ -15,9 +15,11 @@ const Projets = () => {
       <h1>Nos Projets</h1>
       <div className="projets_images">
         <div className="projets_images_1">
+          <h3 className="projets_images_1_header">Travaux neufs</h3>
           <img src={imageprojets1} alt="image du projet 1" />
           <p>
             <h3>Ancien siège de l'HUMA</h3> <br />
+            <a>Mission prévention chantier</a> <br />
             Coordination SPS <br />
             Maître d'ouvrage : AVIVA // AMO : Théop <br />
             Architecte : B-archi
@@ -33,12 +35,18 @@ const Projets = () => {
           </p>
         </div>
         <div className="projets_images_3">
+          <h3 className="projets_images_1_header">
+            Travaux réhabilités lourds et rénovation
+          </h3>
           <img src={imageprojets3} alt="image du projet 3" />
         </div>
         <div className="projets_images_4">
           <img src={imageprojets4} alt="image du projet 4" />
         </div>
         <div className="projets_images_5">
+          <h3 className="projets_images_1_header">
+            Travaux patrimoine et sous-terrain
+          </h3>
           <img src={imageprojets5} alt="image du projet 5" />
         </div>
       </div>
