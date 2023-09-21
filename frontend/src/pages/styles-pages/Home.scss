@@ -28,7 +28,7 @@
         font-family: $fontText;
         color: $secondary-color;
         text-align: left;
-        width: 50vw;
+        width: 70vw;
         font-size: 18px;
       }
       .projets_photo {
@@ -39,7 +39,7 @@
           top: 320px;
           left: 350px;
           font-family: $fontTitre;
-          color: $secondary-color;
+          color: $background-color;
           font-size: 70px;
           font-weight: lighter;
           z-index: 3;
@@ -82,9 +82,9 @@
             top: 70px;
             font-family: $fontTitre;
             color: #fff;
-            font-weight: lighter;
+            font-weight: bold;
             margin: 0;
-            text-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            text-shadow: rgba(0, 0, 0, 0.25) 1px 4px 10px;
           }
           img {
             height: 250px;
@@ -103,9 +103,9 @@
             top: 150px;
             font-family: $fontTitre;
             color: #fff;
-            font-weight: lighter;
+            font-weight: bold;
             margin: 0;
-            text-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            text-shadow: rgba(0, 0, 0, 0.25) 1px 4px 10px;
           }
           img {
             height: 250px;
@@ -122,9 +122,9 @@
             top: 200px;
             font-family: $fontTitre;
             color: #fff;
-            font-weight: lighter;
+            font-weight: bold;
             margin: 0;
-            text-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            text-shadow: rgba(0, 0, 0, 0.25) 1px 4px 10px;
           }
           img {
             height: 250px;
@@ -140,36 +140,18 @@
     .avis {
       position: relative;
       top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80vw;
     }
     .team {
       position: relative;
       top: 300px;
     }
   }
-
-  // a.underline-hover-effect {
-  //   text-decoration: none;
-  //   color: inherit;
-  // }
-  // .underline-hover-effect {
-  //   display: inline-block;
-  //   padding-bottom: 0.25rem; /* defines the space between text and underline */
-  //   position: relative;
-  // }
-
-  // .underline-hover-effect::after {
-  //   content: "";
-  //   position: absolute;
-  //   left: 0;
-  //   bottom: 0;
-  //   width: 0;
-  //   height: 2px;
-  //   background-color: $secondary-color;
-  //   transition: width 0.25s ease-out;
-  // }
-  // .underline-hover-effect:hover::after {
-  //   width: 100%;
-  // }
 }
 
 // MOBIIIIIIIIIIIIIIIIILE
@@ -190,48 +172,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .projets_section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      width: 90vw;
-      // height: 60vh;
-      p {
-        font-family: $fontText;
-        color: $secondary-color;
-        text-align: left;
-        width: 90vw;
-        font-size: 14px;
-      }
-      .projets_photo {
-        position: relative;
-        bottom: 150px;
-        h2 {
-          position: relative;
-          top: 150px;
-          font-family: $fontTitre;
-          color: $secondary-color;
-          font-size: 50px;
-          font-weight: lighter;
-          z-index: 3;
-        }
-        .picture_projects {
-          position: relative;
-          z-index: 2;
-          height: 35vh;
-          width: 90vw;
-          box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-          margin: 0;
-        }
-      }
-      .picture_projects:hover {
-        filter: blur(2px);
-      }
-    }
     .services_sections {
       display: flex;
       flex-direction: column;
@@ -301,6 +241,51 @@
         }
       }
     }
+    .projets_section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 90vw;
+      margin-top: 100px;
+      // height: 60vh;
+      p {
+        font-family: $fontText;
+        color: $secondary-color;
+        text-align: left;
+        width: 90vw;
+        font-size: 14px;
+        padding-bottom: 40px;
+      }
+      .projets_photo {
+        position: relative;
+        bottom: 150px;
+        h2 {
+          position: relative;
+          top: 150px;
+          font-family: $fontTitre;
+          color: $secondary-color;
+          font-size: 50px;
+          font-weight: lighter;
+          z-index: 3;
+        }
+        .picture_projects {
+          position: relative;
+          z-index: 2;
+          height: 35vh;
+          width: 90vw;
+          box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+          margin: 0;
+        }
+      }
+      .picture_projects:hover {
+        filter: blur(2px);
+      }
+    }
+
     .avis {
       position: relative;
       top: 100px;

@@ -4,8 +4,8 @@ import { Link } from "react-router-dom"
 import Avis from "../components/Avis"
 import Team from "../components/Team"
 
-import imageprojets from "../assets/images/sama.jpg"
-import imageservicecoordo from "../assets/images/moda.jpeg"
+import imageprojets from "../assets/images/imageprojet3.jpg"
+
 import imageserviceformation from "../assets/images/formation.jpeg"
 import imageserviceaudit from "../assets/images/audit.jpg"
 
@@ -16,32 +16,37 @@ const Home = () => {
   return (
     <>
       <h1 className="home_title_top">
-        Coordination SPS et Prévention des risques
-        <br /> professionnels
+        Coordination SPS et conseil en management
+        <br /> des risques professionnels
       </h1>
       <div className="home">
         <div className="services_sections">
-          <p>Une expersite de proximité adapté à vos besoins</p>
+          <p>
+            DYNATECH est depuis 2010 une entreprise de conseil en prévention des
+            risques professionnels principalement implantée dans le domaine de
+            la construction, dont la vocation est de proposer à ses clients un
+            accompagnement personnalisé dans la maitrise des risques.
+          </p>
           <div className="services_cards">
             <div className="service_coordination">
               <Link to="/services">
                 {" "}
                 <h2>Coordination SPS</h2>
-                <img src={imageservicecoordo} alt="photo de la MODA" />
+                <img src={imageprojets} alt="photo de LIGHTWELL" />
               </Link>
             </div>
             <div className="service_prevention">
               <Link to="/services">
                 {" "}
                 <h2>
-                  Mission prévention QHSE <br /> chantier
+                  Management des risques <br /> professionnels
                 </h2>
                 <img src={imageserviceformation} alt="photo de formation" />
               </Link>
             </div>
             <div className="service_audit">
               <Link to="/services">
-                <h2>Formations & Audits</h2>
+                <h2>Conseil, Formations et Audits</h2>
                 <img src={imageserviceaudit} alt="photo de réunion" />
               </Link>
             </div>
@@ -49,9 +54,9 @@ const Home = () => {
         </div>
         <div className="projets_section">
           <p>
-            Depuis 17 ans, nous nous engageons aux côtés de nos clients, les
-            accompagnant avec passion dans des missions variées, en quête
-            constante de leur réussite.
+            L’entreprise est dirigée par des professionnels de la coordination
+            SPS, de l’animation QSE sur chantier et dans le management des
+            ingénieurs QSE sur les sites d’implantation de ses clients
           </p>
           <div className="projets_photo">
             <Link to="/projets">

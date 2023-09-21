@@ -131,6 +131,40 @@
               font-size: 18px;
             }
           }
+          .liste3 {
+            font-family: $fontText;
+            color: $primary-color;
+            font-size: 20px;
+            padding: 0;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li {
+              font-family: $fontText;
+              color: $secondary-color;
+              text-align: center;
+              width: 50vw;
+              font-size: 18px;
+            }
+          }
+          .liste4 {
+            font-family: $fontText;
+            color: $primary-color;
+            font-size: 20px;
+            padding: 0;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li {
+              font-family: $fontText;
+              color: $secondary-color;
+              text-align: center;
+              width: 50vw;
+              font-size: 18px;
+            }
+          }
         }
       }
       .services_conseil {
@@ -238,10 +272,10 @@
           position: relative;
           h3 {
             position: relative;
-            top: 20px;
+            top: 40px;
             font-family: $fontTitre;
             color: #fff;
-            font-size: 25px;
+            font-size: 24px;
             font-weight: lighter;
             z-index: 3;
           }
@@ -272,40 +306,87 @@
           display: flex;
           flex-direction: row;
           justify-content: center;
-          position: relative;
           bottom: 50px;
-          .liste1 {
-            font-family: $fontText;
-            color: $primary-color;
-            font-size: 15px;
-            padding: 0;
-            width: 45%;
+          .liste_left {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            li {
+            max-width: 40%;
+            .liste1 {
               font-family: $fontText;
-              color: $secondary-color;
-              text-align: center;
-              width: 50vw;
-              font-size: 15px;
+              color: $primary-color;
+              font-size: 14px;
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              flex-wrap: wrap;
+
+              li {
+                font-family: $fontText;
+                color: $secondary-color;
+                text-align: center;
+                font-size: 14px;
+              }
+            }
+            .liste2 {
+              font-family: $fontText;
+              color: $primary-color;
+              font-size: 14px;
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              flex-wrap: wrap;
+              li {
+                font-family: $fontText;
+                color: $secondary-color;
+                text-align: center;
+                font-size: 14px;
+              }
             }
           }
-          .liste2 {
-            font-family: $fontText;
-            color: $primary-color;
-            font-size: 15px;
-            padding: 0;
-            width: 45%;
+          .liste_right {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            li {
+            max-width: 40%;
+            .liste3 {
               font-family: $fontText;
-              color: $secondary-color;
-              text-align: center;
-              width: 50vw;
-              font-size: 15px;
+              color: $primary-color;
+              font-size: 14px;
+              padding: 0;
+              // max-width: 40%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              flex-wrap: wrap;
+              li {
+                font-family: $fontText;
+                color: $secondary-color;
+                text-align: center;
+                font-size: 14px;
+              }
+            }
+            .liste4 {
+              font-family: $fontText;
+              color: $primary-color;
+              font-size: 14px;
+              padding: 0;
+              // max-width: 40%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              flex-wrap: wrap;
+
+              li {
+                font-family: $fontText;
+                color: $secondary-color;
+                text-align: center;
+                font-size: 14px;
+              }
             }
           }
         }
@@ -344,6 +425,9 @@
           margin-right: auto;
           position: relative;
           bottom: 50px;
+          ul {
+            text-align: left;
+          }
         }
       }
     }

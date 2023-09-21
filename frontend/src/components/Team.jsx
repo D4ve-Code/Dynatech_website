@@ -8,28 +8,23 @@ import gerard from "../assets/images/gerard.jpg"
 const Team = () => {
   return (
     <div className="team">
-      <p>
-        L’équipe DYNATECH prouve au quotidien son engagement envers la qualité,
-        la sécurité et votre satisfaction.
-        <br />
-        Faites-nous confiance pour la réussite de vos projets.
-      </p>
+      <p>Notre équipe</p>
       <div className="portraits">
         <div className="portraits_line_1">
           <div className="portrait1">
             <img src={franck} alt="portrait de franck" />
             <h2>
-              Franck
+              Franck LEBREUIL
               <br />
-              LEBREUIL
+              Présisent
             </h2>
           </div>
           <div className="portrait2">
             <img src={flo} alt="portrait de flo" />
             <h2>
-              Florian
+              Christophe LAVENIR
               <br />
-              SIRODOT
+              Directeur Général
             </h2>
           </div>
         </div>
@@ -37,17 +32,17 @@ const Team = () => {
           <div className="portrait3">
             <img src={nathalie} alt="portrait de nathalie" />
             <h2>
-              Nathalie
+              Florian SIRODOT
               <br />
-              YIN
+              Chef de service QSE
             </h2>
           </div>
           <div className="portrait4">
             <img src={gerard} alt="portrait de gerard" />
             <h2>
-              Gérard
+              Karim BELAID
               <br />
-              DION
+              Consultant QSE
             </h2>
           </div>
         </div>

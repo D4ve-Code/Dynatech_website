@@ -1,320 +1,380 @@
 @media screen and (min-width: 600px) {
   .avis {
-    display: flex;
-    flex-direction: row;
-    // max-width: 80vw;
-    align-items: center;
-    height: 40vh;
-    margin-top: 150px;
-    .avis_texte {
-      max-width: 400px;
-      padding-left: 20px;
+    .avis_top {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      position: relative;
-      height: 100%;
-      .texte1 {
-        font-family: $fontText;
-        color: $primary-color;
-        font-size: 30px;
-        font-weight: bold;
-        text-align: left;
-        margin: 0 0 30px 0;
-      }
-      .texte2 {
-        font-family: $fontText;
-        color: $secondary-color;
-        text-align: left;
-        margin: 0 0 50px 0;
-      }
-      button {
-        all: unset;
-        display: block;
-        background-color: $background-color;
-        color: $primary-color;
-        font-weight: bold;
-        font-size: 20px;
-        border: 1px solid $secondary-color;
-        border-radius: 17px;
-        padding: 10px 20px;
-        cursor: pointer;
-        max-width: 160px;
-        text-align: center;
-      }
-    }
-    .avis_right {
-      padding-left: 250px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      .avis_card {
+      flex-direction: row;
+      // max-width: 80vw;
+      align-items: center;
+      height: 40vh;
+      margin-top: 150px;
+      .avis_texte {
+        max-width: 400px;
+        padding-left: 20px;
         display: flex;
-        background-color: #fff;
-        border-radius: 15px;
-        max-width: 35vw;
-        height: 27vh;
-        margin-bottom: 50px;
-        .card_left {
-          position: relative;
-          height: 100%;
-          .card_left_image_text {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        height: 100%;
+        .texte1 {
+          font-family: $fontText;
+          color: $primary-color;
+          font-size: 30px;
+          font-weight: bold;
+          text-align: left;
+          margin: 0 0 30px 0;
+        }
+        .texte2 {
+          font-family: $fontText;
+          color: $secondary-color;
+          text-align: left;
+          margin: 0 0 50px 0;
+        }
+        button {
+          all: unset;
+          display: block;
+          background-color: $background-color;
+          color: $primary-color;
+          font-weight: bold;
+          font-size: 20px;
+          border: 1px solid $secondary-color;
+          border-radius: 17px;
+          padding: 10px 20px;
+          cursor: pointer;
+          max-width: 160px;
+          text-align: center;
+        }
+      }
+      .avis_right {
+        padding-left: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .avis_card {
+          display: flex;
+          background-color: #fff;
+          border-radius: 15px;
+          max-width: 35vw;
+          height: 27vh;
+          margin-bottom: 50px;
+          .card_left {
+            position: relative;
+            height: 100%;
+            .card_left_image_text {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              img {
+                width: 50px;
+                height: 50px;
+                border-radius: 15px 0 0 0;
+              }
+              .card_text {
+                font-family: $fontText;
+                color: $fourth-color;
+                width: 80%;
+                text-align: center;
+                font-size: 1vw;
+                // padding-left: 30px;
+              }
+              .card_name {
+                font-family: $fontText;
+                color: $primary-color;
+                font-size: 12px;
+                text-align: left;
+                // padding-left: 20px;
+              }
+            }
+            // .bullets {
+            //   display: flex;
+            //   padding-top: 40px;
+            //   padding-left: 200px;
+            //   .bullet1 {
+            //     width: 8px;
+            //     height: 8px;
+            //     background-color: $fourth-color;
+            //     border-radius: 50%;
+            //     margin: 0 7px;
+            //   }
+            //   .bullet2 {
+            //     width: 8px;
+            //     height: 8px;
+            //     background-color: $third-color;
+            //     border-radius: 50%;
+            //     margin: 0 7px;
+            //   }
+            //   .bullet3 {
+            //     width: 8px;
+            //     height: 8px;
+            //     background-color: $third-color;
+            //     border-radius: 50%;
+            //     margin: 0 7px;
+            //   }
+            //   .bullet4 {
+            //     width: 8px;
+            //     height: 8px;
+            //     background-color: $third-color;
+            //     border-radius: 50%;
+            //     margin: 0 7px;
+            //   }
+            // }
+          }
+          .card_right {
+            position: relative;
+            height: 100%;
+            img {
+              height: 100%;
+              width: 18vw;
+              object-fit: cover;
+              border-radius: 0 15px 15px 0;
+            }
+          }
+        }
+        .avis_chiffres {
+          display: flex;
+          * {
+            margin: 0;
+          }
+          .avis_chiffres1 {
             display: flex;
             flex-direction: column;
-            img {
-              width: 50px;
-              height: 50px;
-              border-radius: 15px 0 0 0;
-            }
-            .card_text {
-              font-family: $fontText;
-              color: $fourth-color;
-              width: 80%;
-              padding-left: 30px;
-            }
-            .card_name {
+            align-items: flex-start;
+            padding: 0 30px;
+            h3 {
               font-family: $fontText;
               color: $primary-color;
-              font-size: 12px;
+              font-weight: bold;
+              font-size: 30px;
+            }
+            p {
+              font-family: $fontText;
+              color: $secondary-color;
               text-align: left;
-              padding-left: 20px;
+              max-width: 100px;
             }
           }
-          .bullets {
+          .avis_chiffres2 {
             display: flex;
-            padding-top: 40px;
-            padding-left: 200px;
-            .bullet1 {
-              width: 8px;
-              height: 8px;
-              background-color: $fourth-color;
-              border-radius: 50%;
-              margin: 0 7px;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 30px;
+
+            h3 {
+              font-family: $fontText;
+              color: $primary-color;
+              font-weight: bold;
+              font-size: 30px;
             }
-            .bullet2 {
-              width: 8px;
-              height: 8px;
-              background-color: $third-color;
-              border-radius: 50%;
-              margin: 0 7px;
-            }
-            .bullet3 {
-              width: 8px;
-              height: 8px;
-              background-color: $third-color;
-              border-radius: 50%;
-              margin: 0 7px;
-            }
-            .bullet4 {
-              width: 8px;
-              height: 8px;
-              background-color: $third-color;
-              border-radius: 50%;
-              margin: 0 7px;
+            p {
+              font-family: $fontText;
+              color: $secondary-color;
+              text-align: left;
+              max-width: 100px;
             }
           }
-        }
-        .card_right {
-          position: relative;
-          height: 100%;
-          img {
-            height: 100%;
-            width: 18vw;
-            object-fit: cover;
-            border-radius: 0 15px 15px 0;
+          .avis_chiffres3 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 30px;
+
+            h3 {
+              font-family: $fontText;
+              color: $primary-color;
+              font-weight: bold;
+              font-size: 30px;
+            }
+            p {
+              font-family: $fontText;
+              color: $secondary-color;
+              text-align: left;
+              max-width: 100px;
+            }
           }
         }
       }
-      .avis_chiffres {
+      .numerotest {
+        font-family: $fontText;
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 30px;
+      }
+    }
+    .avis_bottom {
+      margin-top: 150px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%); /* Déplacement complet vers la gauche */
+        }
+      }
+      .logo-container-wrapper {
+        overflow: hidden; /* Masquez le dépassement */
+        width: 100%; /* Limitez la largeur à 100% de .avis_bottom */
+      }
+      .logo-container {
+        white-space: nowrap; /* Empêche le retour à la ligne des éléments */
+        animation: scroll 20s linear infinite; /* Durée de 10 secondes (ajustez selon vos besoins) */
         display: flex;
-        * {
-          margin: 0;
-        }
-        .avis_chiffres1 {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          padding: 0 30px;
-          h3 {
-            font-family: $fontText;
-            color: $primary-color;
-            font-weight: bold;
-            font-size: 30px;
-          }
-          p {
-            font-family: $fontText;
-            color: $secondary-color;
-            text-align: left;
-            max-width: 100px;
-          }
-        }
-        .avis_chiffres2 {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          padding: 0 30px;
-
-          h3 {
-            font-family: $fontText;
-            color: $primary-color;
-            font-weight: bold;
-            font-size: 30px;
-          }
-          p {
-            font-family: $fontText;
-            color: $secondary-color;
-            text-align: left;
-            max-width: 100px;
-          }
-        }
-        .avis_chiffres3 {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          padding: 0 30px;
-
-          h3 {
-            font-family: $fontText;
-            color: $primary-color;
-            font-weight: bold;
-            font-size: 30px;
-          }
-          p {
-            font-family: $fontText;
-            color: $secondary-color;
-            text-align: left;
-            max-width: 100px;
-          }
+        justify-content: space-between;
+        .logodefile {
+          margin-right: 200px;
+          object-fit: contain;
         }
       }
     }
   }
-  .numerotest {
-    font-family: $fontText;
-    color: $primary-color;
-    font-weight: bold;
-    font-size: 30px;
+  .ligne-noire {
+    height: 1px; /* Épaisseur de la ligne */
+    background-color: $third-color; /* Couleur de la ligne */
+    width: 100%; /* Largeur de la ligne */
+  }
+
+  .ligne-noire-top {
+    margin-bottom: 10px; /* Espacement en-dessous de la ligne */
+  }
+
+  .ligne-noire-bottom {
+    margin-top: 10px; /* Espacement au-dessus de la ligne */
   }
 }
 
 @media screen and (max-width: 600px) {
   .avis {
-    display: flex;
-    flex-direction: column;
-    max-width: 80vw;
-    align-items: center;
-    height: 40vh;
-    margin-top: 20px;
-    .avis_texte {
-      width: 90vw;
+    .avis_top {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      position: relative;
-      height: 100%;
-      .texte1 {
-        font-family: $fontText;
-        color: $primary-color;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: left;
-        margin: 0 0 30px 0;
-      }
-      .texte2 {
-        font-family: $fontText;
-        color: $secondary-color;
+      // max-width: 80vw;
+      align-items: center;
+      height: 40vh;
+      margin-top: 20px;
+      .avis_texte {
         width: 90vw;
-        font-size: 14px;
-        text-align: left;
-        margin: 0 0 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        height: 100%;
+        .texte1 {
+          font-family: $fontText;
+          color: $primary-color;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: left;
+          margin: 0 0 30px 0;
+        }
+        .texte2 {
+          font-family: $fontText;
+          color: $secondary-color;
+          width: 90vw;
+          font-size: 14px;
+          text-align: left;
+          margin: 0 0 50px 0;
+        }
+        button {
+          display: none;
+        }
       }
-      button {
-        display: none;
+      .avis_right {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        // right: 30px;
+        .avis_card {
+          display: flex;
+          background-color: #fff;
+          border-radius: 15px;
+          max-width: 90vw;
+          height: 27vh;
+          .card_left {
+            position: relative;
+            height: 100%;
+            // width: 3000px;
+            .card_left_image_text {
+              display: flex;
+              flex-direction: column;
+              img {
+                width: 50px;
+                height: 50px;
+                border-radius: 15px 0 0 0;
+              }
+              .card_text {
+                font-family: $fontText;
+                color: $fourth-color;
+                width: 90%;
+                text-align: left;
+                padding-left: 10px;
+                font-size: 12px;
+              }
+              .card_name {
+                font-family: $fontText;
+                color: $primary-color;
+                font-size: 12px;
+                width: 90%;
+                padding-left: 10px;
+                text-align: left;
+              }
+            }
+          }
+          .card_right {
+            position: relative;
+            height: 100%;
+            img {
+              height: 100%;
+              width: 35vw;
+              object-fit: cover;
+              border-radius: 0 15px 15px 0;
+            }
+          }
+        }
+        .avis_chiffres {
+          display: none;
+        }
       }
     }
-    .avis_right {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      right: 20px;
-      .avis_card {
-        display: flex;
-        background-color: #fff;
-        border-radius: 15px;
-        max-width: 80vw;
-        height: 27vh;
-        .card_left {
-          position: relative;
-          height: 100%;
-          width: 200px;
-          .card_left_image_text {
-            display: flex;
-            flex-direction: column;
-            img {
-              width: 50px;
-              height: 50px;
-              border-radius: 15px 0 0 0;
-            }
-            .card_text {
-              font-family: $fontText;
-              color: $fourth-color;
-              width: 100%;
-              text-align: left;
-              padding-left: 10px;
-              font-size: 14px;
-            }
-            .card_name {
-              font-family: $fontText;
-              color: $primary-color;
-              font-size: 12px;
-              width: 100%;
-              padding-left: 10px;
-              text-align: left;
-            }
-          }
-          .bullets {
-            display: flex;
-            padding-top: 40px;
-            padding-left: 200px;
-            .bullet1 {
-              width: 8px;
-              height: 8px;
-              border-radius: 50%;
-              margin: 0 7px;
-            }
-            .bullet2 {
-              width: 8px;
-              height: 8px;
-              border-radius: 50%;
-              margin: 0 7px;
-            }
-            .bullet3 {
-              width: 8px;
-              height: 8px;
-              border-radius: 50%;
-              margin: 0 7px;
-            }
-            .bullet4 {
-              width: 8px;
-              height: 8px;
-              border-radius: 50%;
-              margin: 0 7px;
-            }
-          }
+    .avis_bottom {
+      margin-top: 150px;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
         }
-        .card_right {
-          position: relative;
-          height: 100%;
-          img {
-            height: 100%;
-            width: 40vw;
-            object-fit: cover;
-            border-radius: 0 15px 15px 0;
-          }
+        100% {
+          transform: translateX(-100%); /* Déplacement complet vers la gauche */
         }
       }
-      .avis_chiffres {
-        display: none;
+      .logo-container-wrapper {
+        overflow: hidden; /* Masquez le dépassement */
+        width: 100%; /* Limitez la largeur à 100% de .avis_bottom */
+      }
+      .logo-container {
+        white-space: nowrap; /* Empêche le retour à la ligne des éléments */
+        animation: scroll 20s linear infinite;
+        display: flex;
+        justify-content: space-between;
+        .logodefile {
+          margin-right: 200px;
+          object-fit: contain;
+        }
+      }
+      .ligne-noire {
+        height: 1px; /* Épaisseur de la ligne */
+        background-color: $third-color; /* Couleur de la ligne */
+        width: 100%; /* Largeur de la ligne */
+      }
+
+      .ligne-noire-top {
+        margin-bottom: 10px; /* Espacement en-dessous de la ligne */
+      }
+
+      .ligne-noire-bottom {
+        margin-top: 10px; /* Espacement au-dessus de la ligne */
       }
     }
   }

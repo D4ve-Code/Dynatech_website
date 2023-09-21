@@ -13,9 +13,10 @@ const Agence = () => {
     <div className="agence">
       <h1>L'agence</h1>
       <p className="first_p">
-        L’équipe DYNATECH prouve au quotidien son engagement envers la qualité,
-        la sécurité et votre satisfaction. Faites-nous confiance pour la
-        réussite de vos projets.
+        Nous faisons de notre proximité, notre disponibilité et notre
+        implication des atouts majeurs pour répondre rapidement aux demandes nos
+        clients. <br />
+        DYNATECH, c'est le choix sécurité !
       </p>
       <div className="valeurs">
         <p># Partenariat</p>
@@ -28,21 +29,19 @@ const Agence = () => {
           <div className="portrait1">
             <img src={franck} alt="portrait de franck" />
             <p>
-              <span className="nom">Franck LEBREUIL</span>, chef d'orchestre,
-              CSPS de catégorie 1. En 2003, Franck a fondé DYNATECH pour
-              soutenir les équipes du Château de FONTAINBLEAU lors de l'une des
-              plus importantes rénovations du château. Depuis l’aventure
-              continue !
+              <span className="nom">Franck LEBREUIL, </span>
+              Dirigeant de DYNATECH, réalise depuis 1995 des missions de
+              Coordination SPS sur des opérations mobilisant jusqu'à 500
+              personnes. Formateur de Coordonnateur SPS, son pouvoir de
+              conviction est une force pour vos chantiers !
             </p>
           </div>
           <div className="portrait2">
             <img src={flo} alt="portrait de flo" />
             <p>
-              <span className="nom">Florian SIRODOT</span> occupe le poste de
-              Responsable et Manager, ainsi que d'expert CSPS de catégorie 1.
-              Après avoir réussi dans son parcours chez les majors du BTP, il
-              accompagne l'ensemble de nos clients et se charge du développement
-              de nos activités.
+              <span className="nom">Christophe LAVENIR, </span>
+              Directeur Général, réalise les missions administratives et
+              fonctionnelles pour assurer le bon fonctionnement de la société.
             </p>
           </div>
         </div>
@@ -50,20 +49,21 @@ const Agence = () => {
           <div className="portrait3">
             <img src={nathalie} alt="portrait de nathalie" />
             <p>
-              <span className="nom">Nathalie YUN</span> est notre experte en
-              sécurité et CSPS de catégorie 2. Elle travaille en étroite
-              collaboration avec nos clients sur leurs projets récents,
-              contribuant ainsi à améliorer les compétences de leurs équipes en
-              matière de santé, sécurité et environnement.
+              <span className="nom">Florian SIRODOT, </span>Chef de Service QSE,
+              exerce depuis 15 ans dans les métiers de la Qualité, Sécurité et
+              Environnement.. Manager des consultants et également Coordonnateur
+              SPS, sa maitrise des sujets opérationnels fait de lui un leader
+              dans le domaine !
             </p>
           </div>
           <div className="portrait4">
             <img src={gerard} alt="portrait de gerard" />
             <p>
-              <span className="nom">Gérard DION</span> notre "couteau suisse"
-              QSE, est membre de notre équipe depuis 3 ans. Son expertise
-              s'étend notamment à l'impact environnemental et aux certifications
-              de type ISO, apportant ainsi une valeur ajoutée à nos services.
+              <span className="nom">Karim BELAID, </span>Chef de Service QSE,
+              exerce depuis 15 ans dans les métiers de la Qualité, Sécurité et
+              Environnement.. Manager des consultants et également Coordonnateur
+              SPS, sa maitrise des sujets opérationnels fait de lui un leader
+              dans le domaine !{" "}
             </p>
           </div>
         </div>
