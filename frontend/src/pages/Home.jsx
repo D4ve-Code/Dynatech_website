@@ -1,54 +1,80 @@
-import React from "react";
-import Avis from "../components/Avis";
-import Team from "../components/Team";
+import React, { useEffect } from "react"
+import { Link } from "react-router-dom"
 
-import image_projets from "../assets/images/sama.jpg";
-import image_service_coordo from "../assets/images/moda.jpeg";
-import image_service_formation from "../assets/images/formation.jpeg";
-import image_service_audit from "../assets/images/audit.jpg";
+import Avis from "../components/Avis"
+import Team from "../components/Team"
+
+import imageprojets from "../assets/images/imageprojet3.jpg"
+
+import imageserviceformation from "../assets/images/formation.jpeg"
+import imageserviceaudit from "../assets/images/audit.jpg"
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
-    <div>
-      <h1>
-        Coordination SPS et Prévention des risques <>professionnels</>
+    <>
+      <h1 className="home_title_top">
+        Coordination SPS et conseil en management
+        <br /> des risques professionnels
       </h1>
-
-      <div className="projets-section">
-        <p>
-          Depuis 17 ans, nous nous engageons aux côtés de nos clients, les
-          accompagnant avec passion dans des missions variées, en quête
-          constante de leur réussite
-        </p>
-        <h2>Les projets</h2>{" "}
-        <img
-          className="picture-projects"
-          src={image_projets}
-          alt="image des projets"
-        ></img>
-      </div>
-      <div className="services-sections">
-        <p>Une expersite de proximité adapté à vos besoins</p>
-        <div className="services-cards">
-          {" "}
-          <div>
-            <h2>Coordination SPS</h2>
-            <img src={image_service_coordo} alt="photo de la MODA" />
-          </div>
-          <div>
-            <h2>Formations</h2>
-            <img src={image_service_formation} alt="photo de la MODA" />
-          </div>{" "}
-          <div>
-            <h2>Conseils & Audits</h2>
-            <img src={image_service_audit} alt="photo de la MODA" />
+      <div className="home">
+        <div className="services_sections">
+          <p>
+            DYNATECH est depuis 2010 une entreprise de conseil en prévention des
+            risques professionnels principalement implantée dans le domaine de
+            la construction, dont la vocation est de proposer à ses clients un
+            accompagnement personnalisé dans la maitrise des risques.
+          </p>
+          <div className="services_cards">
+            <div className="service_coordination">
+              <Link to="/services">
+                {" "}
+                <h2>Coordination SPS</h2>
+                <img src={imageprojets} alt="photo de LIGHTWELL" />
+              </Link>
+            </div>
+            <div className="service_prevention">
+              <Link to="/services">
+                {" "}
+                <h2>
+                  Management des risques <br /> professionnels
+                </h2>
+                <img src={imageserviceformation} alt="photo de formation" />
+              </Link>
+            </div>
+            <div className="service_audit">
+              <Link to="/services">
+                <h2>Conseil, Formations et Audits</h2>
+                <img src={imageserviceaudit} alt="photo de réunion" />
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-      <Avis />
-      <Team />
-    </div>
-  );
-};
+        <div className="projets_section">
+          <p>
+            L’entreprise est dirigée par des professionnels de la coordination
+            SPS, de l’animation QSE sur chantier et dans le management des
+            ingénieurs QSE sur les sites d’implantation de ses clients
+          </p>
+          <div className="projets_photo">
+            <Link to="/projets">
+              <h2>Les projets</h2>
+              <img
+                className="picture_projects"
+                src={imageprojets}
+                alt="image des projets"
+              />
+            </Link>
+          </div>
+        </div>
 
-export default Home;
+        <Avis />
+        <Team />
+      </div>
+    </>
+  )
+}
+
+export default Home

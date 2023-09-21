@@ -1,9 +1,106 @@
-.portraits {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  img {
-    height: 100px;
-    width: 120px;
+@media screen and (min-width: 600px) {
+  .team {
+    p {
+      font-family: $fontText;
+      color: $secondary-color;
+      text-align: center;
+      font-size: 18px;
+      margin: 0;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .portraits {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      .portraits_line_1 {
+        display: flex;
+        flex-direction: row;
+        padding: 70px 0 50px 0;
+        img {
+          height: 200px;
+          width: 200px;
+          border-radius: 50%;
+          padding: 0 200px;
+          object-fit: cover;
+        }
+        h2 {
+          font-family: $fontTitre;
+          color: $primary-color;
+        }
+      }
+      .portraits_line_2 {
+        display: flex;
+        flex-direction: row;
+        img {
+          height: 200px;
+          width: 200px;
+          border-radius: 50%;
+          padding: 0 200px;
+          object-fit: cover;
+        }
+        h2 {
+          font-family: $fontTitre;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .team {
+    p {
+      font-family: $fontText;
+      color: $secondary-color;
+      text-align: center;
+      font-size: 14px;
+      margin: 0;
+      width: 90vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .portraits {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .portraits_line_1 {
+        display: flex;
+        flex-direction: column;
+        padding: 70px 0 0px 0;
+        img {
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        h2 {
+          font-family: $fontTitre;
+          color: $primary-color;
+          font-size: 18px;
+          padding-bottom: 20px;
+        }
+      }
+      .portraits_line_2 {
+        display: flex;
+        flex-direction: column;
+        img {
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        h2 {
+          font-family: $fontTitre;
+          color: $primary-color;
+          font-size: 18px;
+          padding-bottom: 20px;
+        }
+      }
+    }
   }
 }
