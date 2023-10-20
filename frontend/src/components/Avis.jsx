@@ -8,27 +8,35 @@ import image1 from "../assets/images/imageprojet3.jpg"
 import image2 from "../assets/images/imageprojet5.jpg"
 import image3 from "../assets/images/imageprojet4.jpg"
 
-import logo1 from "../assets/images/logo_adim.png"
-import logo2 from "../assets/images/logo_andra2.jpg"
-import logo3 from "../assets/images/logo_antea.png"
-import logo4 from "../assets/images/logo_cardinal.png"
-import logo5 from "../assets/images/logo_caterpillar.png"
-import logo6 from "../assets/images/logo_covea.png"
-import logo7 from "../assets/images/logo_eiffel.jpg"
-import logo8 from "../assets/images/logo_ffme.png"
-import logo9 from "../assets/images/logo_foncia.png"
+import logo1 from "../assets/images/logo_icade.jpg"
+import logo2 from "../assets/images/logo_nexity.png"
+import logo3 from "../assets/images/logo_lidl.png"
+import logo4 from "../assets/images/logo_unibail.png"
+import logo5 from "../assets/images/logo_wo2.jpg"
+import logo6 from "../assets/images/logo_vinci.png"
+import logo7 from "../assets/images/logo_fayat.jpg"
+import logo8 from "../assets/images/logo_adim.png"
+import logo9 from "../assets/images/logo_terrot.png"
 import logo10 from "../assets/images/logo_fontainebleau.png"
-import logo11 from "../assets/images/logo_idec.png"
-import logo12 from "../assets/images/logo_isms.png"
-import logo13 from "../assets/images/logo_lidl.png"
+import logo11 from "../assets/images/logo_verrecchia.jpg"
+import logo12 from "../assets/images/logo_bnp.jpg"
+import logo13 from "../assets/images/logo_antea.png"
 import logo14 from "../assets/images/logo_lorenz.jpg"
 import logo15 from "../assets/images/logo_mandarin.png"
 import logo16 from "../assets/images/logo_monoprix.jpg"
-import logo17 from "../assets/images/logo_nexity.png"
+import logo17 from "../assets/images/logo_andra2.jpg"
 import logo18 from "../assets/images/logo_oppic.png"
 import logo19 from "../assets/images/logo_ramboll.png"
 import logo20 from "../assets/images/logo_versailles.png"
-import logo21 from "../assets/images/logo_vinci.png"
+import logo21 from "../assets/images/logo_covea.png"
+import logo22 from "../assets/images/logo_arizona.jpg"
+import logo23 from "../assets/images/logo_foncia.png"
+import logo24 from "../assets/images/logo_idec.png"
+import logo25 from "../assets/images/logo_caterpillar.png"
+import logo26 from "../assets/images/logo_ffme.png"
+import logo27 from "../assets/images/logo_cardinal.png"
+import logo28 from "../assets/images/logo_eiffel.jpg"
+import logo29 from "../assets/images/logo_isms.png"
 
 function Number({ n, delay }) {
   const { ref, inView } = useInView()
@@ -220,6 +228,54 @@ const Avis = () => {
             <img
               src={logo21}
               alt="Logo 21"
+              width="100"
+              className="logodefile"
+            />
+            <img
+              src={logo22}
+              alt="Logo 22"
+              width="100"
+              className="logodefile"
+            />
+            <img
+              src={logo23}
+              alt="Logo 23"
+              width="100"
+              className="logodefile"
+            />
+            <img
+              src={logo24}
+              alt="Logo 24"
+              width="100"
+              className="logodefile"
+            />
+            <img
+              src={logo25}
+              alt="Logo 25"
+              width="100"
+              className="logodefile"
+            />
+            <img
+              src={logo26}
+              alt="Logo 26"
+              width="100"
+              className="logodefile"
+            />
+            <img
+              src={logo27}
+              alt="Logo 27"
+              width="100"
+              className="logodefile"
+            />
+            <img
+              src={logo28}
+              alt="Logo 28"
+              width="100"
+              className="logodefile"
+            />
+            <img
+              src={logo29}
+              alt="Logo 29"
               width="100"
               className="logodefile"
             />

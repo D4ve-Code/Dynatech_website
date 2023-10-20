@@ -1,9 +1,9 @@
 import React from "react"
 
 import franck from "../assets/images/franck.jpg"
-import flo from "../assets/images/flo.jpg"
-import nathalie from "../assets/images/nathalie.jpg"
-import gerard from "../assets/images/gerard.jpg"
+import christophe from "../assets/images/christophe.jpg"
+import florian from "../assets/images/florian.jpg"
+import karim from "../assets/images/karim.jpg"
 
 const Team = () => {
   return (
@@ -12,15 +12,15 @@ const Team = () => {
       <div className="portraits">
         <div className="portraits_line_1">
           <div className="portrait1">
-            <img src={franck} alt="portrait de franck" />
+            <img src={karim} alt="portrait de karim" />
             <h2>
-              Franck LEBREUIL
+              Karim BELAID
               <br />
-              Présisent
+              Consultant QSE
             </h2>
           </div>
           <div className="portrait2">
-            <img src={flo} alt="portrait de flo" />
+            <img src={christophe} alt="portrait de christophe" />
             <h2>
               Christophe LAVENIR
               <br />
@@ -30,19 +30,19 @@ const Team = () => {
         </div>
         <div className="portraits_line_2">
           <div className="portrait3">
-            <img src={nathalie} alt="portrait de nathalie" />
+            <img src={franck} alt="portrait de franck" />
+            <h2>
+              Franck LEBREUIL
+              <br />
+              Présisent
+            </h2>
+          </div>
+          <div className="portrait4">
+            <img src={florian} alt="portrait de florian" />
             <h2>
               Florian SIRODOT
               <br />
               Chef de service QSE
-            </h2>
-          </div>
-          <div className="portrait4">
-            <img src={gerard} alt="portrait de gerard" />
-            <h2>
-              Karim BELAID
-              <br />
-              Consultant QSE
             </h2>
           </div>
         </div>

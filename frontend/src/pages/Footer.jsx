@@ -17,12 +17,12 @@ const Footer = () => {
         <h2>CONTACT</h2>
         <p>
           01 34 62 60 13 <br />
-          contact@dynatech.fr
+          contact@dynatech-conseil.fr
         </p>
       </div>
       <div className="recrutement">
         <h2>RECRUTEMENT</h2>
-        <p>contact@dynatech.fr </p>
+        <p>recrutement@dynatech-conseil.fr </p>
       </div>
       <div className="logos">
         <Link to="mailto:franck.lebreuil@dynatech-conseil.fr">

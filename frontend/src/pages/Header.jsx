@@ -44,6 +44,16 @@ const Header = () => {
               </a>
             </li>
           </Link>
+          {/* <li className="projects-dropdown">
+            <a href="#" className="underline-hover-effect">
+              Les projets
+            </a>
+            <div className="projects-dropdown-content">
+              <Link to="/projets/neuf">Nouvel Onglet</Link>
+              <Link to="/projets/reha">Autre Onglet</Link>
+              <Link to="/projets/patrimoine">Encore un Onglet</Link>
+            </div>
+          </li> */}
           <Link to="/agence">
             <li>
               <a href="#" className="underline-hover-effect">
@@ -86,6 +96,15 @@ const Header = () => {
                   }}
                 >
                   <a href="#">Nos services</a>
+                </li>
+              </Link>
+              <Link to="/projets/nouvel-onglet">
+                <li
+                  onClick={() => {
+                    setIsOpen(false)
+                  }}
+                >
+                  <a href="#">Nouvel Onglet</a>
                 </li>
               </Link>
               <Link to={"/projets"}>

@@ -209,7 +209,15 @@
           transform: translateX(0);
         }
         100% {
-          transform: translateX(-100%); /* Déplacement complet vers la gauche */
+          transform: translateX(-200%); /* Déplacement complet vers la gauche */
+        }
+      }
+      @keyframes logoScroll {
+        0% {
+          transform: translateX(100%); /* Commencez à droite */
+        }
+        100% {
+          transform: translateX(-100%); /* Terminez à gauche */
         }
       }
       .logo-container-wrapper {
@@ -218,12 +226,13 @@
       }
       .logo-container {
         white-space: nowrap; /* Empêche le retour à la ligne des éléments */
-        animation: scroll 20s linear infinite; /* Durée de 10 secondes (ajustez selon vos besoins) */
+        animation: scroll 60s linear infinite; /* Durée de 60 secondes pour le défilement principal (ajustez selon vos besoins) */
         display: flex;
         justify-content: space-between;
         .logodefile {
           margin-right: 200px;
           object-fit: contain;
+          animation: logoScroll 20s linear infinite; /* Durée par logo (ajustez selon vos besoins) */
         }
       }
     }

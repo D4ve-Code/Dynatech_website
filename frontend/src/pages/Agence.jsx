@@ -1,9 +1,9 @@
 import React, { useEffect } from "react"
 
 import franck from "../assets/images/franck.jpg"
-import flo from "../assets/images/flo.jpg"
-import nathalie from "../assets/images/nathalie.jpg"
-import gerard from "../assets/images/gerard.jpg"
+import christophe from "../assets/images/christophe.jpg"
+import florian from "../assets/images/florian.jpg"
+import karim from "../assets/images/karim.jpg"
 
 const Agence = () => {
   useEffect(() => {
@@ -27,17 +27,18 @@ const Agence = () => {
       <div className="portraits">
         <div className="portraits_line_1">
           <div className="portrait1">
-            <img src={franck} alt="portrait de franck" />
+            <img src={karim} alt="portrait de karim" />
             <p>
-              <span className="nom">Franck LEBREUIL, </span>
-              Dirigeant de DYNATECH, réalise depuis 1995 des missions de
-              Coordination SPS sur des opérations mobilisant jusqu'à 500
-              personnes. Formateur de Coordonnateur SPS, son pouvoir de
-              conviction est une force pour vos chantiers !
+              <span className="nom">Karim BELAID, </span>Consultant QSE, réalise
+              depuis 5 ans des missions d'ingénieur QSE et préventeur chantier
+              pour le compte de Maître d'Ouvrage et entrepreneur du BTP. Homme
+              de terrain, pédagogue et très impliqué dans le quotidien des
+              chantiers, Karim est un élément incontournable !{" "}
             </p>
           </div>
+
           <div className="portrait2">
-            <img src={flo} alt="portrait de flo" />
+            <img src={christophe} alt="portrait de christophe" />
             <p>
               <span className="nom">Christophe LAVENIR, </span>
               Directeur Général, réalise les missions administratives et
@@ -47,23 +48,23 @@ const Agence = () => {
         </div>
         <div className="portraits_line_2">
           <div className="portrait3">
-            <img src={nathalie} alt="portrait de nathalie" />
+            <img src={franck} alt="portrait de franck" />
+            <p>
+              <span className="nom">Franck LEBREUIL, </span>
+              Dirigeant de DYNATECH, réalise depuis 1995 des missions de
+              Coordination SPS sur des opérations mobilisant jusqu'à 500
+              personnes. Formateur de Coordonnateur SPS, son pouvoir de
+              conviction est une force pour vos chantiers !
+            </p>
+          </div>
+          <div className="portrait4">
+            <img src={florian} alt="portrait de florian" />
             <p>
               <span className="nom">Florian SIRODOT, </span>Chef de Service QSE,
               exerce depuis 15 ans dans les métiers de la Qualité, Sécurité et
               Environnement.. Manager des consultants et également Coordonnateur
               SPS, sa maitrise des sujets opérationnels fait de lui un leader
               dans le domaine !
-            </p>
-          </div>
-          <div className="portrait4">
-            <img src={gerard} alt="portrait de gerard" />
-            <p>
-              <span className="nom">Karim BELAID, </span>Chef de Service QSE,
-              exerce depuis 15 ans dans les métiers de la Qualité, Sécurité et
-              Environnement.. Manager des consultants et également Coordonnateur
-              SPS, sa maitrise des sujets opérationnels fait de lui un leader
-              dans le domaine !{" "}
             </p>
           </div>
         </div>
