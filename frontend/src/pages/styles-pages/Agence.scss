@@ -34,116 +34,48 @@
       display: flex;
       flex-direction: column;
       padding-top: 50px;
-      .portraits_line_1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 70px 0 100px 0;
-        .portrait1 {
+  }
+        // Ajout CSS CC
+        .portraits_line {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding: 50px 0 0 0;
+        .divPortrait {
+          max-width: 25%;
           display: flex;
           flex-direction: column;
           align-items: center;
-          max-width: 20%;
-          padding-right: 200px;
-          img {
+          padding-right: 100px;
+          padding-left: 100px;
+          padding-top: 20px;
+          background-color: $background-color; //Ajout
+          border-radius: 2%; // Ajout
+          transition: background-color 0.3s ease; // Ajout
+          &:hover {
+            background-color: rgb(232, 232, 232); // Ajout
+          }
+          .imgPortrait {
             height: 200px;
             width: 200px;
             border-radius: 50%;
             padding: 0 200px;
             object-fit: cover;
           }
-          p {
+          .nom {
+            font-family: $fontTitre;
+            color: $primary-color;
+            font-size: 22px;
+          }
+          .pres {
             padding-top: 30px;
-
             font-family: $fontText;
             color: $secondary-color;
-            .nom {
-              font-family: $fontTitre;
-              color: $primary-color;
-              font-size: 22px;
-            }
           }
-        }
-        .portrait2 {
-          max-width: 20%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          img {
-            height: 200px;
-            width: 200px;
-            border-radius: 50%;
-            padding: 0 200px;
-
-            object-fit: cover;
           }
-          p {
-            padding-top: 30px;
-
-            font-family: $fontText;
-            color: $secondary-color;
-            .nom {
-              font-family: $fontTitre;
-              color: $primary-color;
-              font-size: 22px;
-            }
-          }
-        }
       }
-      .portraits_line_2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        .portrait3 {
-          max-width: 20%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding-right: 200px;
-          img {
-            height: 200px;
-            width: 200px;
-            border-radius: 50%;
-            padding: 0 200px;
+// Fin CSS CC
 
-            object-fit: cover;
-          }
-          p {
-            padding-top: 30px;
-
-            font-family: $fontText;
-            color: $secondary-color;
-            .nom {
-              font-family: $fontTitre;
-              color: $primary-color;
-              font-size: 22px;
-            }
-          }
-        }
-        .portrait4 {
-          max-width: 20%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          img {
-            height: 200px;
-            width: 200px;
-            border-radius: 50%;
-            padding: 0 200px;
-          }
-          p {
-            padding-top: 30px;
-            font-family: $fontText;
-            color: $secondary-color;
-            .nom {
-              font-family: $fontTitre;
-              color: $primary-color;
-              font-size: 22px;
-            }
-          }
-        }
-      }
-    }
   }
 }
 
@@ -177,114 +109,41 @@
         font-size: 25px;
       }
     }
+    // Modifications CC
     .portraits {
-      display: flex;
-      flex-direction: column;
-      padding-top: 50px;
-      .portraits_line_1 {
+      padding-top: 40px;
+
+      .portraits_line {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        padding: 70px 0 100px 0;
-        .portrait1 {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          max-width: 45%;
-          padding-right: 10px;
-          img {
+        align-items: center;
+
+        .divPortrait {
+          max-width: 75%;
+          padding: 0 15px; 
+          margin-bottom: 20px;
+
+          .imgPortrait {
             height: 150px;
             width: 150px;
             border-radius: 50%;
             object-fit: cover;
+            padding: 0; // enlever le padding superflu
           }
-          p {
-            padding-top: 30px;
+
+          .pres {
             font-family: $fontText;
             color: $secondary-color;
-            font-size: 14px;
+            font-size: 16px;
+
             .nom {
               font-family: $fontTitre;
               color: $primary-color;
-              font-size: 18px;
-            }
-          }
-        }
-        .portrait2 {
-          max-width: 45%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          img {
-            height: 150px;
-            width: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-          }
-          p {
-            padding-top: 30px;
-            font-family: $fontText;
-            color: $secondary-color;
-            font-size: 14px;
-            .nom {
-              font-family: $fontTitre;
-              color: $primary-color;
-              font-size: 18px;
-            }
+              font-size: 20px;
           }
         }
       }
-      .portraits_line_2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        .portrait3 {
-          max-width: 45%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding-right: 10px;
-          img {
-            height: 150px;
-            width: 150px;
-            border-radius: 50%;
-            padding: 0 100px;
-            object-fit: cover;
-          }
-          p {
-            padding-top: 30px;
-            font-family: $fontText;
-            color: $secondary-color;
-            font-size: 14px;
-            .nom {
-              font-family: $fontTitre;
-              color: $primary-color;
-              font-size: 18px;
-            }
-          }
-        }
-        .portrait4 {
-          max-width: 45%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          img {
-            height: 150px;
-            width: 150px;
-            border-radius: 50%;
-          }
-          p {
-            padding-top: 30px;
-            font-family: $fontText;
-            color: $secondary-color;
-            font-size: 14px;
-            .nom {
-              font-family: $fontTitre;
-              color: $primary-color;
-              font-size: 18px;
-            }
-          }
-        }
       }
     }
   }

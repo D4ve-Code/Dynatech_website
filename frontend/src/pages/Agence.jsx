@@ -9,6 +9,7 @@ const Agence = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
   return (
     <div className="agence">
       <h1>L'agence</h1>
@@ -24,11 +25,12 @@ const Agence = () => {
         <p># Accompagnement</p>
         <p># Valeur ajoutée</p>
       </div>
+
       <div className="portraits">
-        <div className="portraits_line_1">
-          <div className="portrait1">
-            <img src={karim} alt="portrait de karim" />
-            <p>
+        <div className="portraits_line">
+          <div className="divPortrait">
+            <img className="imgPortrait" src={karim} alt="portrait de karim" />
+            <p className="pres">
               <span className="nom">Karim BELAID, </span>Consultant QSE, réalise
               depuis 5 ans des missions d'ingénieur QSE et préventeur chantier
               pour le compte de Maître d'Ouvrage et entrepreneur du BTP. Homme
@@ -36,20 +38,16 @@ const Agence = () => {
               chantiers, Karim est un élément incontournable !{" "}
             </p>
           </div>
-
-          <div className="portrait2">
-            <img src={christophe} alt="portrait de christophe" />
-            <p>
-              <span className="nom">Christophe LAVENIR, </span>
-              Directeur Général, réalise les missions administratives et
-              fonctionnelles pour assurer le bon fonctionnement de la société.
-            </p>
-          </div>
         </div>
-        <div className="portraits_line_2">
-          <div className="portrait3">
-            <img src={franck} alt="portrait de franck" />
-            <p>
+
+        <div className="portraits_line">
+          <div className="divPortrait">
+            <img
+              className="imgPortrait"
+              src={franck}
+              alt="portrait de franck"
+            />
+            <p className="pres">
               <span className="nom">Franck LEBREUIL, </span>
               Dirigeant de DYNATECH, réalise depuis 1995 des missions de
               Coordination SPS sur des opérations mobilisant jusqu'à 500
@@ -57,9 +55,28 @@ const Agence = () => {
               conviction est une force pour vos chantiers !
             </p>
           </div>
-          <div className="portrait4">
-            <img src={florian} alt="portrait de florian" />
-            <p>
+          <div className="divPortrait">
+            <img
+              className="imgPortrait"
+              src={christophe}
+              alt="portrait de christophe"
+            />
+            <p className="pres">
+              <span className="nom">Christophe LAVENIR, </span>
+              Directeur Général, réalise les missions administratives et
+              fonctionnelles pour assurer le bon fonctionnement de la société.
+            </p>
+          </div>
+        </div>
+
+        <div className="portraits_line">
+          <div className="divPortrait">
+            <img
+              className="imgPortrait"
+              src={florian}
+              alt="portrait de florian"
+            />
+            <p className="pres">
               <span className="nom">Florian SIRODOT, </span>Chef de Service QSE,
               exerce depuis 15 ans dans les métiers de la Qualité, Sécurité et
               Environnement.. Manager des consultants et également Coordonnateur

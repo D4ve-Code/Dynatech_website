@@ -6,7 +6,9 @@ import { Link } from "react-router-dom"
 import logo from "../assets/images/LOGO.jpg"
 
 const Header = () => {
-  const handleClick = () => {
+  // ***** Mofifié par CC ***** //
+  const handleClick = (event) => {
+    event.preventDefault()
     window.scrollTo({
       top: document.querySelector(".footer_scroll").offsetTop,
       behavior: "smooth",
@@ -15,6 +17,15 @@ const Header = () => {
 
   const [isOpen, setIsOpen] = useState(false)
 
+  // ***** Ajout CC ***** //
+  const scrollToTop = (event) => {
+    event.preventDefault()
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
   return (
     <div className="header">
       <Link to="/">
@@ -22,50 +33,44 @@ const Header = () => {
       </Link>
       <div className="menu-desktop">
         <ul>
-          <Link to="/">
-            <li>
-              <a href="#" className="underline-hover-effect">
-                Accueil
-              </a>
-            </li>
-          </Link>
+          <li
+            onClick={(event) => {
+              scrollToTop(event)
+            }}
+          >
+            <Link to="/">Accueil</Link>
+          </li>
 
-          <Link to="/services">
-            <li>
-              <a href="#" className="underline-hover-effect">
-                Les services
-              </a>
-            </li>
-          </Link>
-          <Link to="/projets">
-            <li>
-              <a href="#" className="underline-hover-effect">
-                Les projets
-              </a>
-            </li>
-          </Link>
-          {/* <li className="projects-dropdown">
-            <a href="#" className="underline-hover-effect">
-              Les projets
-            </a>
-            <div className="projects-dropdown-content">
-              <Link to="/projets/neuf">Nouvel Onglet</Link>
-              <Link to="/projets/reha">Autre Onglet</Link>
-              <Link to="/projets/patrimoine">Encore un Onglet</Link>
-            </div>
-          </li> */}
-          <Link to="/agence">
-            <li>
-              <a href="#" className="underline-hover-effect">
-                L'agence
-              </a>
-            </li>
-          </Link>
-          <li onClick={handleClick}>
-            {" "}
-            <a href="#" className="underline-hover-effect">
-              Contact
-            </a>
+          <li
+            onClick={(event) => {
+              scrollToTop(event)
+            }}
+          >
+            <Link to="/services">Les services</Link>
+          </li>
+
+          <li
+            onClick={(event) => {
+              scrollToTop(event)
+            }}
+          >
+            <Link to="/projets">Les projets</Link>
+          </li>
+
+          <li
+            onClick={(event) => {
+              scrollToTop(event)
+            }}
+          >
+            <Link to="/agence">L'agence</Link>
+          </li>
+
+          <li
+            onClick={(event) => {
+              handleClick(event)
+            }}
+          >
+            <a href="#">Contact</a>
           </li>
         </ul>
       </div>
@@ -79,68 +84,53 @@ const Header = () => {
               className="listMenu"
               style={{ display: isOpen ? "block" : "none" }}
             >
-              <Link to="/">
-                <li
-                  onClick={() => {
-                    setIsOpen(false)
-                  }}
-                >
-                  <a href="#">Accueil</a>
-                </li>
-              </Link>
-
-              <Link to={"/services"}>
-                <li
-                  onClick={() => {
-                    setIsOpen(false)
-                  }}
-                >
-                  <a href="#">Nos services</a>
-                </li>
-              </Link>
-              <Link to="/projets/nouvel-onglet">
-                <li
-                  onClick={() => {
-                    setIsOpen(false)
-                  }}
-                >
-                  <a href="#">Nouvel Onglet</a>
-                </li>
-              </Link>
-              <Link to={"/projets"}>
-                <li
-                  onClick={() => {
-                    setIsOpen(false)
-                  }}
-                >
-                  <a href="#">Nos projets</a>
-                </li>
-              </Link>
-              <Link to="/agence">
-                <li
-                  onClick={() => {
-                    setIsOpen(false)
-                  }}
-                >
-                  <a href="#">L'agence</a>
-                </li>
-              </Link>
-              <Link to="/agence">
-                <li
-                  onClick={() => {
-                    setIsOpen(false)
-                    const element = document.getElementById("bottom_of_page")
-                    if (element) {
-                      window.scrollTo({
-                        top: element.offsetTop,
-                        behavior: "smooth",
-                      })
-                    }
-                  }}
-                >
-                  <a href="#">Contact</a>
-                </li>
-              </Link>
+              <li
+                onClick={(event) => {
+                  scrollToTop(event)
+                  setIsOpen(false)
+                }}
+              >
+                <Link to="/">Accueil</Link>
+              </li>
+              <li
+                onClick={(event) => {
+                  scrollToTop(event)
+                  setIsOpen(false)
+                }}
+              >
+                <Link to="/services">Nos services</Link>
+              </li>
+              <li
+                onClick={(event) => {
+                  scrollToTop(event)
+                  setIsOpen(false)
+                }}
+              >
+                <Link to="/projets">Nos projets</Link>
+              </li>
+              <li
+                onClick={(event) => {
+                  scrollToTop(event)
+                  setIsOpen(false)
+                }}
+              >
+                <Link to="/agence">L'agence</Link>
+              </li>
+              <li
+                onClick={(event) => {
+                  event.preventDefault()
+                  setIsOpen(false)
+                  const element = document.getElementById("bottom_of_page")
+                  if (element) {
+                    window.scrollTo({
+                      top: element.offsetTop,
+                      behavior: "smooth",
+                    })
+                  }
+                }}
+              >
+                <Link to="#">Contact</Link>
+              </li>
             </ul>
           </div>
         </nav>

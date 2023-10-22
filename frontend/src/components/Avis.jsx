@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import { Link } from "react-router-dom"
 import { useSpring, animated } from "react-spring"
 import { useInView } from "react-intersection-observer"
@@ -102,6 +102,37 @@ const Avis = () => {
     return () => clearInterval(interval)
   }, [avisIndex])
 
+  // * * * * *  AJOUT CC * * * * * //
+  const logoContainerRef = useRef(null) // référence au conteneur qui enveloppe les logos
+  const logoWrapperRef = useRef(null) // référence au conteneur interne qui contient les logos
+
+  // Animation JS pour faire défiler les logos
+  useEffect(() => {
+    const logoContainer = logoContainerRef.current
+    const logoWrapper = logoWrapperRef.current
+
+    if (logoContainer && logoWrapper) {
+      const scrollWidth = logoWrapper.scrollWidth - logoContainer.clientWidth
+      const animationDuration = 120000 // Durée de l'animation en millisecondes (ici 120s soit 2mn)
+
+      const animateLogos = () => {
+        const startTime = Date.now()
+        const animate = () => {
+          const currentTime = Date.now()
+          const elapsedTime = currentTime - startTime
+          const progress = (elapsedTime % animationDuration) / animationDuration
+          const newPosition = -scrollWidth * progress
+          logoWrapper.style.transform = `translateX(${newPosition}px)`
+          requestAnimationFrame(animate)
+        }
+        animate()
+      }
+
+      animateLogos()
+    }
+  }, [])
+  // * * * * *  FIN AJOUT CC * * * * * //
+
   return (
     <div className="avis">
       <div className="avis_top">
@@ -146,139 +177,358 @@ const Avis = () => {
       </div>
       <div className="avis_bottom">
         <div className="ligne-noire ligne-noire-top"></div>
-
         <div className="logo-container-wrapper">
-          {" "}
-          <div className="logo-container">
-            <img src={logo1} alt="Logo 1" width="100" className="logodefile" />
-            <img src={logo2} alt="Logo 2" width="100" className="logodefile" />
-            <img src={logo3} alt="Logo 3" width="100" className="logodefile" />
-            <img src={logo4} alt="Logo 4" width="100" className="logodefile" />
-            <img src={logo5} alt="Logo 5" width="100" className="logodefile" />
-            <img src={logo6} alt="Logo 6" width="100" className="logodefile" />
-            <img src={logo7} alt="Logo 7" width="100" className="logodefile" />
-            <img src={logo8} alt="Logo 8" width="100" className="logodefile" />
-            <img src={logo9} alt="Logo 9" width="100" className="logodefile" />
-            <img
-              src={logo10}
-              alt="Logo 10"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo11}
-              alt="Logo 11"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo12}
-              alt="Logo 12"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo13}
-              alt="Logo 13"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo14}
-              alt="Logo 14"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo15}
-              alt="Logo 15"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo16}
-              alt="Logo 16"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo17}
-              alt="Logo 17"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo18}
-              alt="Logo 18"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo19}
-              alt="Logo 19"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo20}
-              alt="Logo 20"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo21}
-              alt="Logo 21"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo22}
-              alt="Logo 22"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo23}
-              alt="Logo 23"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo24}
-              alt="Logo 24"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo25}
-              alt="Logo 25"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo26}
-              alt="Logo 26"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo27}
-              alt="Logo 27"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo28}
-              alt="Logo 28"
-              width="100"
-              className="logodefile"
-            />
-            <img
-              src={logo29}
-              alt="Logo 29"
-              width="100"
-              className="logodefile"
-            />
+          <div className="logo-container" ref={logoContainerRef}>
+            <div className="logo-wrapper" ref={logoWrapperRef}>
+              <img
+                src={logo1}
+                alt="Logo 1"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo2}
+                alt="Logo 2"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo3}
+                alt="Logo 3"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo4}
+                alt="Logo 4"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo5}
+                alt="Logo 5"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo6}
+                alt="Logo 6"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo7}
+                alt="Logo 7"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo8}
+                alt="Logo 8"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo9}
+                alt="Logo 9"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo10}
+                alt="Logo 10"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo11}
+                alt="Logo 11"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo12}
+                alt="Logo 12"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo13}
+                alt="Logo 13"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo14}
+                alt="Logo 14"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo15}
+                alt="Logo 15"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo16}
+                alt="Logo 16"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo17}
+                alt="Logo 17"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo18}
+                alt="Logo 18"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo19}
+                alt="Logo 19"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo20}
+                alt="Logo 20"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo21}
+                alt="Logo 21"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo22}
+                alt="Logo 22"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo23}
+                alt="Logo 23"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo24}
+                alt="Logo 24"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo25}
+                alt="Logo 25"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo26}
+                alt="Logo 26"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo27}
+                alt="Logo 27"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo28}
+                alt="Logo 28"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo29}
+                alt="Logo 29"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo1}
+                alt="Logo 1"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo2}
+                alt="Logo 2"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo3}
+                alt="Logo 3"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo4}
+                alt="Logo 4"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo5}
+                alt="Logo 5"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo6}
+                alt="Logo 6"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo7}
+                alt="Logo 7"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo8}
+                alt="Logo 8"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo9}
+                alt="Logo 9"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo10}
+                alt="Logo 10"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo11}
+                alt="Logo 11"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo12}
+                alt="Logo 12"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo13}
+                alt="Logo 13"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo14}
+                alt="Logo 14"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo15}
+                alt="Logo 15"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo16}
+                alt="Logo 16"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo17}
+                alt="Logo 17"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo18}
+                alt="Logo 18"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo19}
+                alt="Logo 19"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo20}
+                alt="Logo 20"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo21}
+                alt="Logo 21"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo22}
+                alt="Logo 22"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo23}
+                alt="Logo 23"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo24}
+                alt="Logo 24"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo25}
+                alt="Logo 25"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo26}
+                alt="Logo 26"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo27}
+                alt="Logo 27"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo28}
+                alt="Logo 28"
+                width="100"
+                className="logodefile"
+              />
+              <img
+                src={logo29}
+                alt="Logo 29"
+                width="100"
+                className="logodefile"
+              />
+            </div>
           </div>
           <div className="ligne-noire ligne-noire-bottom"></div>
         </div>

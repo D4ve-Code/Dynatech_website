@@ -139,7 +139,7 @@
     }
     .avis {
       position: relative;
-      top: 100px;
+      top: 0px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -149,7 +149,7 @@
     }
     .team {
       position: relative;
-      top: 300px;
+      top: 200px;
     }
   }
 }
@@ -166,7 +166,7 @@
     font-weight: lighter;
     position: relative;
     bottom: 35px;
-    width: 65vw;
+    width: 70vw;
   }
   .home {
     display: flex;
@@ -182,7 +182,7 @@
         font-family: $fontText;
         color: $secondary-color;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
       }
       .services_cards {
         display: flex;
@@ -235,7 +235,7 @@
           }
           img {
             height: 200px;
-            max-width: 350px;
+            width: 350px;
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
           }
         }
@@ -250,14 +250,14 @@
       margin-right: auto;
       text-align: center;
       width: 90vw;
-      margin-top: 100px;
-      // height: 60vh;
+      margin-top: 50px;
+      margin-bottom: -80px;
       p {
         font-family: $fontText;
         color: $secondary-color;
-        text-align: left;
+        text-align: center;
         width: 90vw;
-        font-size: 14px;
+        font-size: 16px;
         padding-bottom: 40px;
       }
       .projets_photo {
@@ -288,11 +288,11 @@
 
     .avis {
       position: relative;
-      top: 100px;
+      top: 0px;
     }
     .team {
       position: relative;
-      top: 300px;
+      top: 120px;
     }
   }
 

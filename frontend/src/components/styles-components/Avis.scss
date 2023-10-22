@@ -54,7 +54,7 @@
           background-color: #fff;
           border-radius: 15px;
           max-width: 35vw;
-          height: 27vh;
+          height: 30vh;
           margin-bottom: 50px;
           .card_left {
             position: relative;
@@ -204,36 +204,43 @@
       width: 100%;
       margin-left: auto;
       margin-right: auto;
-      @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-200%); /* Déplacement complet vers la gauche */
-        }
-      }
-      @keyframes logoScroll {
-        0% {
-          transform: translateX(100%); /* Commencez à droite */
-        }
-        100% {
-          transform: translateX(-100%); /* Terminez à gauche */
-        }
-      }
+  
+      // @keyframes scroll {
+      //   0% {
+      //     transform: translateX(0);
+      //   }
+      //   100% {
+      //     transform: translateX(-200%); /* Déplacement complet vers la gauche */
+      //   }
+      // }
+      // @keyframes logoScroll {
+      //   0% {
+      //     transform: translateX(100%); /* Commencez à droite */
+      //   }
+      //   100% {
+      //     transform: translateX(-100%); /* Terminez à gauche */
+      //   }
+      // }
       .logo-container-wrapper {
         overflow: hidden; /* Masquez le dépassement */
         width: 100%; /* Limitez la largeur à 100% de .avis_bottom */
       }
       .logo-container {
+        display: flex;
         white-space: nowrap; /* Empêche le retour à la ligne des éléments */
-        animation: scroll 60s linear infinite; /* Durée de 60 secondes pour le défilement principal (ajustez selon vos besoins) */
+        // animation: scroll 60s linear infinite; /* Durée de 60 secondes pour le défilement principal (ajustez selon vos besoins) */
         display: flex;
         justify-content: space-between;
-        .logodefile {
-          margin-right: 200px;
-          object-fit: contain;
-          animation: logoScroll 20s linear infinite; /* Durée par logo (ajustez selon vos besoins) */
-        }
+        align-items: center;
+        .logo-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; /* Alignez verticalement les logos au centre */
+          .logodefile {
+            margin-right: 200px;
+            object-fit: contain;
+          }
+      }
       }
     }
   }
@@ -257,7 +264,7 @@
     .avis_top {
       display: flex;
       flex-direction: column;
-      // max-width: 80vw;
+      /* max-width: 80vw; */
       align-items: center;
       height: 40vh;
       margin-top: 20px;
@@ -265,7 +272,7 @@
         width: 90vw;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         position: relative;
         height: 100%;
         .texte1 {
@@ -273,15 +280,15 @@
           color: $primary-color;
           font-size: 20px;
           font-weight: bold;
-          text-align: left;
+          text-align: center;
           margin: 0 0 30px 0;
         }
         .texte2 {
           font-family: $fontText;
           color: $secondary-color;
           width: 90vw;
-          font-size: 14px;
-          text-align: left;
+          font-size: 16px;
+          text-align: center;
           margin: 0 0 50px 0;
         }
         button {
@@ -350,27 +357,25 @@
       width: 50%;
       margin-left: auto;
       margin-right: auto;
-      @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-100%); /* Déplacement complet vers la gauche */
-        }
-      }
       .logo-container-wrapper {
         overflow: hidden; /* Masquez le dépassement */
         width: 100%; /* Limitez la largeur à 100% de .avis_bottom */
       }
       .logo-container {
         white-space: nowrap; /* Empêche le retour à la ligne des éléments */
-        animation: scroll 20s linear infinite;
         display: flex;
         justify-content: space-between;
+        .logo-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
         .logodefile {
-          margin-right: 200px;
+          // margin-right: 200px;
+          margin-right: 50px;
+          margin-left: 50px;
           object-fit: contain;
         }
+      }
       }
       .ligne-noire {
         height: 1px; /* Épaisseur de la ligne */

@@ -51,7 +51,7 @@ const Services = () => {
               <ul className="liste2">
                 <h4>Adrien</h4>
                 <li>22 ans</li>
-                <li>Accueilles les nouveaux arrivants</li>
+                <li>Accueille les nouveaux arrivants</li>
                 <li>Réalise les causeries sécurité</li>
                 <li>Formalise ses visites sécurités</li>
                 <li>Analyse les incidents</li>
@@ -92,7 +92,8 @@ const Services = () => {
           </div>
           <p className="p_bullet">
             Nous réalisions des missions d'audits, de conseil et de formations
-            "sur-mesure" en fonction de vos besoins :
+            "sur-mesure" en fonction de vos besoins :<br />
+            <br />
             <ul>
               <li>Audit opérationnel sécurité</li>
               <li>Audit interne QSE</li>

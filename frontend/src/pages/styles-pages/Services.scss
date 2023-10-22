@@ -18,7 +18,7 @@
         font-family: $fontText;
         color: $secondary-color;
         text-align: center;
-        width: 50vw;
+        width: 55vw;
         font-size: 22px;
         max-width: 80%;
         margin-left: auto;
@@ -29,7 +29,7 @@
           position: relative;
           h3 {
             position: relative;
-            top: 50px;
+            top: 52px;
             font-family: $fontTitre;
             color: #fff;
             font-size: 40px;
@@ -40,7 +40,7 @@
             position: relative;
             bottom: 60px;
             z-index: 2;
-            height: 10vh;
+            height: 12vh;
             width: 70vw;
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
             margin: 0;
@@ -52,7 +52,7 @@
           font-family: $fontText;
           color: $secondary-color;
           text-align: center;
-          width: 50vw;
+          width: 55vw;
           font-size: 18px;
           max-width: 80%;
           margin-left: auto;
@@ -64,7 +64,7 @@
           position: relative;
           h3 {
             position: relative;
-            top: 50px;
+            top: 52px;
             font-family: $fontTitre;
             color: #fff;
             font-size: 40px;
@@ -75,7 +75,7 @@
             position: relative;
             bottom: 60px;
             z-index: 2;
-            height: 10vh;
+            height: 12vh;
             width: 70vw;
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
             margin: 0;
@@ -87,7 +87,7 @@
           font-family: $fontText;
           color: $secondary-color;
           text-align: center;
-          width: 50vw;
+          width: 55vw;
           font-size: 18px;
           max-width: 80%;
           margin-left: auto;
@@ -103,9 +103,17 @@
             font-size: 20px;
             padding: 0;
             width: 500px;
+            height: 40vh;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: flex-start;
+            background-color: $background-color; //Ajout
+            border-radius: 2%; // Ajout
+            transition: background-color 0.3s ease; // Ajout
+            &:hover {
+              background-color: rgb(232, 232, 232); // Ajout
+            }
             li {
               font-family: $fontText;
               color: $secondary-color;
@@ -120,9 +128,17 @@
             font-size: 20px;
             padding: 0;
             width: 500px;
+            height: 40vh;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: flex-start;
+            background-color: $background-color; //Ajout
+            border-radius: 2%; // Ajout
+            transition: background-color 0.3s ease; // Ajout
+            &:hover {
+              background-color: rgb(232, 232, 232); // Ajout
+            }
             li {
               font-family: $fontText;
               color: $secondary-color;
@@ -137,9 +153,17 @@
             font-size: 20px;
             padding: 0;
             width: 500px;
+            height: 40vh;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: flex-start;
+            background-color: $background-color; //Ajout
+            border-radius: 2%; // Ajout
+            transition: background-color 0.3s ease; // Ajout
+            &:hover {
+              background-color: rgb(232, 232, 232); // Ajout
+            }
             li {
               font-family: $fontText;
               color: $secondary-color;
@@ -154,9 +178,17 @@
             font-size: 20px;
             padding: 0;
             width: 500px;
+            height: 40vh;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: flex-start;
+            background-color: $background-color; //Ajout
+            border-radius: 2%; // Ajout
+            transition: background-color 0.3s ease; // Ajout
+            &:hover {
+              background-color: rgb(232, 232, 232); // Ajout
+            }
             li {
               font-family: $fontText;
               color: $secondary-color;
@@ -172,7 +204,7 @@
           position: relative;
           h3 {
             position: relative;
-            top: 50px;
+            top: 52px;
             font-family: $fontTitre;
             color: #fff;
             font-size: 40px;
@@ -183,7 +215,7 @@
             position: relative;
             bottom: 60px;
             z-index: 2;
-            height: 10vh;
+            height: 12vh;
             width: 70vw;
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
             margin: 0;
@@ -195,7 +227,7 @@
           font-family: $fontText;
           color: $secondary-color;
           text-align: center;
-          width: 50vw;
+          width: 55vw;
           font-size: 18px;
           max-width: 80%;
           margin-left: auto;
@@ -239,15 +271,19 @@
             top: 20px;
             font-family: $fontTitre;
             color: #fff;
-            font-size: 25px;
+            font-size: 24px;
             font-weight: lighter;
             z-index: 3;
+            // Ajout
+            padding-right: 20px;
+            padding-left: 20px;
+            // fin
           }
           img {
             position: relative;
             bottom: 60px;
             z-index: 2;
-            height: 10vh;
+            height: 12vh;
             width: 90vw;
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
             margin: 0;
@@ -265,6 +301,7 @@
           margin-right: auto;
           position: relative;
           bottom: 50px;
+          margin-bottom: 0;
         }
       }
       .service_formation {
@@ -278,12 +315,16 @@
             font-size: 24px;
             font-weight: lighter;
             z-index: 3;
+            // Ajout
+            padding-right: 20px;
+            padding-left: 20px;
+            // fin
           }
           img {
             position: relative;
             bottom: 60px;
             z-index: 2;
-            height: 10vh;
+            height: 12vh;
             width: 90vw;
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
             margin: 0;
@@ -300,19 +341,20 @@
           margin-left: auto;
           margin-right: auto;
           position: relative;
-          bottom: 50px;
+          bottom: 20px;
         }
         .liste_formation {
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           justify-content: center;
+          align-items: center;
           bottom: 50px;
           .liste_left {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            max-width: 40%;
+            max-width: 75%;
             .liste1 {
               font-family: $fontText;
               color: $primary-color;
@@ -352,7 +394,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            max-width: 40%;
+            max-width: 75%;
             .liste3 {
               font-family: $fontText;
               color: $primary-color;
@@ -394,20 +436,27 @@
       .services_conseil {
         .conseil_photo {
           position: relative;
+          padding-top: 3em;
+          padding-bottom: 1em;
           h3 {
             position: relative;
             top: 20px;
             font-family: $fontTitre;
             color: #fff;
-            font-size: 25px;
+            font-size: 24px;
             font-weight: lighter;
             z-index: 3;
+            // Ajout
+            margin: 0;
+            padding-right: 20px;
+            padding-left: 20px;
+            // fin
           }
           img {
             position: relative;
             bottom: 60px;
             z-index: 2;
-            height: 10vh;
+            height: 12vh;
             width: 90vw;
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
             margin: 0;

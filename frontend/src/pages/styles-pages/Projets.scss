@@ -10,6 +10,52 @@
       position: relative;
       bottom: 20px;
     }
+    // * * * Ajout de CSS CC * * * //
+    .sous_titres_filtres {
+      font-family: "Montserrat-Regular";
+      font-weight: lighter;
+      color: #003c57;
+      font-size: 16px;
+      text-align: left;
+      padding-left: 30px;
+      padding-top: 5px;
+      position: relative;
+      bottom: 20px;
+    }
+    .sous_titres_filtres span {
+      margin-right: 30px; /* Espace entre les catégories */
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      color: #003c57;
+      display: inline-block; /* Ajout */
+      padding-bottom: 0.25rem; /* Ajout */
+    }
+    
+    .sous_titres_filtres span::before {
+      content: "";
+      position: absolute;
+      bottom: -2px; /* Soulignement + bas */
+      left: 0;
+      right: 0;
+      bottom: 0; /* Ajout */
+      width: 0; /* Ajout */
+      height: 1.5px; /* Épaisseur du soulignement */
+      background-color: #003c57; 
+      // opacity: 0; /* Soulignement invisible par défaut */
+      transition: width 0.2s ease-out;
+    }
+    
+    .sous_titres_filtres span:hover::before {
+      // opacity: 1; /* Afficher le soulignement lors du survol */
+      width: 100%; /* Ajout */
+    }
+    
+    .sous_titres_filtres .selected::before {
+      // opacity: 1; /* Afficher le soulignement pour la catégorie sélectionnée */
+      width: 100%; /* Ajout */
+    }
+    // * * * Fin ajout de CSS CC * * * //
     .projets_images {
       display: flex;
       flex-direction: column;
@@ -36,6 +82,7 @@
           max-width: 100%;
           height: 600px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -49,11 +96,11 @@
           font-family: $fontText;
           font-size: 25px;
           h3 {
-            font-size: 55px;
+            font-size: 2em;
             margin: 0;
           }
-          a {
-            font-size: 25px;
+          span {
+            font-size: 0.9em;
           }
         }
       }
@@ -71,6 +118,7 @@
           max-width: 100%;
           height: 600px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -84,11 +132,11 @@
           font-family: $fontText;
           font-size: 25px;
           h3 {
-            font-size: 55px;
+            font-size: 2em;
             margin: 0;
           }
-          a {
-            font-size: 25px;
+          span {
+            font-size: 0.9em;
           }
         }
       }
@@ -108,6 +156,7 @@
           max-width: 100%;
           height: 600px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -121,11 +170,11 @@
           font-family: $fontText;
           font-size: 25px;
           h3 {
-            font-size: 55px;
+            font-size: 2em;
             margin: 0;
           }
-          a {
-            font-size: 25px;
+          span {
+            font-size: 0.9em;
           }
         }
       }
@@ -157,6 +206,7 @@
           max-width: 100%;
           height: 600px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -170,11 +220,11 @@
           font-family: $fontText;
           font-size: 25px;
           h3 {
-            font-size: 55px;
+            font-size: 2em;
             margin: 0;
           }
-          a {
-            font-size: 25px;
+          span {
+            font-size: 0.9em;
           }
         }
       }
@@ -192,6 +242,7 @@
           max-width: 100%;
           height: 600px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -205,11 +256,11 @@
           font-family: $fontText;
           font-size: 25px;
           h3 {
-            font-size: 55px;
+            font-size: 2em;
             margin: 0;
           }
-          a {
-            font-size: 25px;
+          span {
+            font-size: 0.9em;
           }
         }
       }
@@ -241,6 +292,7 @@
           max-width: 100%;
           height: 600px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -254,11 +306,11 @@
           font-family: $fontText;
           font-size: 25px;
           h3 {
-            font-size: 55px;
+            font-size: 2em;
             margin: 0;
           }
-          a {
-            font-size: 25px;
+          span {
+            font-size: 0.9em;
           }
         }
       }
@@ -290,6 +342,7 @@
           max-width: 100%;
           height: 600px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -303,11 +356,11 @@
           font-family: $fontText;
           font-size: 25px;
           h3 {
-            font-size: 55px;
+            font-size: 2em;
             margin: 0;
           }
-          a {
-            font-size: 25px;
+          span{
+            font-size: 0.9em;
           }
         }
       }
@@ -325,6 +378,7 @@
           max-width: 100%;
           height: 600px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -338,11 +392,11 @@
           font-family: $fontText;
           font-size: 25px;
           h3 {
-            font-size: 55px;
+            font-size: 2em;
             margin: 0;
           }
-          a {
-            font-size: 25px;
+          span {
+            font-size: 0.9em;
           }
         }
       }
@@ -360,6 +414,7 @@
           max-width: 100%;
           height: 600px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -373,11 +428,11 @@
           font-family: $fontText;
           font-size: 25px;
           h3 {
-            font-size: 55px;
+            font-size: 2em;
             margin: 0;
           }
-          a {
-            font-size: 25px;
+          span {
+            font-size: 0.9em;
           }
         }
       }
@@ -423,6 +478,38 @@
       position: relative;
       bottom: 30px;
     }
+    // * * * Ajout de CSS CC * * * //
+    .sous_titres_filtres {
+      font-family: "Montserrat-Regular";
+      font-weight: lighter;
+      color: #003c57;
+      font-size: 14px;
+      text-align: left;
+      padding-left: 30px;
+      padding-top: 5px;
+      position: relative;
+      bottom: 20px;
+    }
+    .sous_titres_filtres span {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      color: #003c57;
+      padding-bottom: 5px;
+      transition: font-weight 0.3s ease;
+    }
+    
+    .sous_titres_filtres span:hover {
+      font-weight: bold;
+    }
+  
+    
+    .sous_titres_filtres .selected{
+      font-weight: bold;    
+    }
+    // * * * Fin ajout de CSS CC * * * //
     .projets_images {
       display: flex;
       flex-direction: column;
@@ -441,6 +528,7 @@
           width: 90%;
           height: 300px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -453,7 +541,7 @@
           transition: opacity 0.7s;
           font-family: $fontText;
           font-size: 13px;
-          // width: 300px;
+          width: 75%;
           h3 {
             font-size: 25px;
             margin: 0;
@@ -483,6 +571,7 @@
           width: 90%;
           height: 300px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -495,7 +584,7 @@
           transition: opacity 0.7s;
           font-family: $fontText;
           font-size: 13px;
-          // width: 300px;
+          width: 75%;
           h3 {
             font-size: 25px;
             margin: 0;
@@ -525,6 +614,7 @@
           width: 90%;
           height: 300px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -537,7 +627,7 @@
           transition: opacity 0.7s;
           font-family: $fontText;
           font-size: 13px;
-          // width: 300px;
+          width: 75%;
           h3 {
             font-size: 25px;
             margin: 0;
@@ -567,6 +657,7 @@
           width: 90%;
           height: 300px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -579,7 +670,7 @@
           transition: opacity 0.7s;
           font-family: $fontText;
           font-size: 13px;
-          // width: 300px;
+          width: 75%;
           h3 {
             font-size: 25px;
             margin: 0;
@@ -609,6 +700,7 @@
           width: 90%;
           height: 300px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -621,7 +713,7 @@
           transition: opacity 0.7s;
           font-family: $fontText;
           font-size: 13px;
-          // width: 300px;
+          width: 75%;
           h3 {
             font-size: 25px;
             margin: 0;
@@ -651,6 +743,7 @@
           width: 90%;
           height: 300px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -663,7 +756,7 @@
           transition: opacity 0.7s;
           font-family: $fontText;
           font-size: 13px;
-          // width: 300px;
+          width: 75%;
           h3 {
             font-size: 25px;
             margin: 0;
@@ -693,6 +786,7 @@
           width: 90%;
           height: 300px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -705,7 +799,7 @@
           transition: opacity 0.7s;
           font-family: $fontText;
           font-size: 13px;
-          // width: 300px;
+          width: 75%;
           h3 {
             font-size: 25px;
             margin: 0;
@@ -735,6 +829,7 @@
           width: 90%;
           height: 300px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -747,7 +842,7 @@
           transition: opacity 0.7s;
           font-family: $fontText;
           font-size: 13px;
-          // width: 300px;
+          width: 75%;
           h3 {
             font-size: 25px;
             margin: 0;
@@ -777,6 +872,7 @@
           width: 90%;
           height: 300px;
           padding: 50px 0;
+          object-fit: cover;
           transition: filter 0.7s;
         }
         p {
@@ -789,7 +885,7 @@
           transition: opacity 0.7s;
           font-family: $fontText;
           font-size: 13px;
-          // width: 300px;
+          width: 75%;
           h3 {
             font-size: 25px;
             margin: 0;
