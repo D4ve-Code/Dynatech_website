@@ -77,7 +77,7 @@ const Projets = () => {
         <>
           Coordination SPS
           <br />
-          Maître d'ouvrage : UNIBAIL - RODAMCO - WESTFIELD
+          Maître d'ouvrage : SEMIIC PRO et ICADE
           <br />
           Maître d’œuvre : ARCHI5 PROD
         </>
@@ -149,9 +149,9 @@ const Projets = () => {
           <br />
           (PGC, DIUO, études des risques)
           <br />
-          Maître d'ouvrage : LIDL France
+          Maître d'ouvrage : ANDRA
           <br />
-          Architecte : Atelier M3
+          Architecte : ANTEA GROUP
         </>
       ),
     },
