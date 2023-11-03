@@ -38,7 +38,9 @@ const Header = () => {
               scrollToTop(event)
             }}
           >
-            <Link to="/">Accueil</Link>
+            <Link className="underline-hover-effect" to="/">
+              Accueil
+            </Link>
           </li>
 
           <li
@@ -46,7 +48,9 @@ const Header = () => {
               scrollToTop(event)
             }}
           >
-            <Link to="/services">Les services</Link>
+            <Link className="underline-hover-effect" to="/services">
+              Les services
+            </Link>
           </li>
 
           <li
@@ -54,7 +58,9 @@ const Header = () => {
               scrollToTop(event)
             }}
           >
-            <Link to="/projets">Les projets</Link>
+            <Link className="underline-hover-effect" to="/projets">
+              Les projets
+            </Link>
           </li>
 
           <li
@@ -62,7 +68,9 @@ const Header = () => {
               scrollToTop(event)
             }}
           >
-            <Link to="/agence">L'agence</Link>
+            <Link className="underline-hover-effect" to="/agence">
+              L'agence
+            </Link>
           </li>
 
           <li
@@ -70,7 +78,9 @@ const Header = () => {
               handleClick(event)
             }}
           >
-            <a href="#">Contact</a>
+            <a className="underline-hover-effect" href="#">
+              Contact
+            </a>
           </li>
         </ul>
       </div>
