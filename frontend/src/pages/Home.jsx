@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import Avis from "../components/Avis"
 import Team from "../components/Team"
 
-import imageprojets from "../assets/images/imageprojet3.jpg"
+import imageprojets from "../assets/images/imageprojet102.jpg"
 
 import imageserviceformation from "../assets/images/formation.jpeg"
 import imageserviceaudit from "../assets/images/audit.jpg"
@@ -25,7 +25,7 @@ const Home = () => {
             DYNATECH est depuis 2010 une entreprise de conseil en prévention des
             risques professionnels principalement implantée dans le domaine de
             la construction, dont la vocation est de proposer à ses clients un
-            accompagnement personnalisé dans la maitrise des risques.
+            accompagnement personnalisé dans la maîtrise des risques.
           </p>
           <div className="services_cards">
             <div className="service_coordination">
@@ -46,7 +46,7 @@ const Home = () => {
             </div>
             <div className="service_audit">
               <Link to="/services">
-                <h2>Conseil, Formations et Audits</h2>
+                <h2>Conseil, Formation et Audit</h2>
                 <img src={imageserviceaudit} alt="photo de réunion" />
               </Link>
             </div>

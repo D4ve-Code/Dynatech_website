@@ -34,7 +34,7 @@ const Team = () => {
             <h2>
               Franck LEBREUIL
               <br />
-              Présisent
+              Président
             </h2>
           </div>
           <div className="portrait4">

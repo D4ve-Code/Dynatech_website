@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .header {
     display: flex;
     flex-direction: row;
@@ -23,6 +23,7 @@
       width: 70%;
       display: flex;
       justify-content: center;
+      padding-right: 0.5em;
       ul {
         display: flex;
         flex-direction: row;
@@ -95,7 +96,117 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+// TABLETTE
+@media screen and (max-width: 1023px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: $background-color;
+    // h1 {
+    //   color: $primary-color;
+    //   font-family: $fontTitre;
+    //   font-weight: bold;
+    //   padding-left: 30px;
+    //   font-size: 30px;
+    // }
+    img {
+      width: 85px;
+      height: 70px;
+      padding: 20px 0 0 30px;
+    }
+    .menu-desktop {
+      display: none;
+    }
+    .burgerMenu {
+      .buttonMenu {
+        background-color: $background-color;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        scale: 2;
+        border: none;
+        color: $primary-color;
+        svg {
+          stroke-width: 0.5px;
+          scale: 1;
+          position: relative;
+          top: 17px;
+          right: 20px;
+        }
+      }
+      .listMenuDiv {
+        .listMenu {
+          position: fixed;
+          padding-top: 200px;
+          top: 0;
+          left: 0;
+          background-color: $background-color;
+          padding-left: 0;
+          height: 100vh;
+          margin: 0;
+          width: 100vw;
+          // overflow-y: scroll;
+          transition: transform 1s;
+          z-index: 1;
+          li {
+            padding-left: 30px;
+            list-style-type: none;
+            padding: 10px 0;
+            cursor: pointer;
+            font-size: 40px;
+            a {
+              position: relative;
+              display: block;
+              text-transform: uppercase;
+              transition: 1s;
+              &::after {
+                position: absolute;
+                content: "";
+                top: 100%;
+                left: 0;
+                width: 100vw;
+                height: 1px;
+                background: $primary-color;
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: transform 0.5s;
+              }
+              &:hover::after {
+                transform: scaleX(1);
+                transform-origin: right;
+              }
+            }
+          }
+          :nth-child(n):link {
+            text-decoration: none;
+            font-family: $fontTitre;
+            color: $primary-color;
+            // text-shadow: 1px 1px 1px $primary-color;
+          }
+          :nth-child(n):visited {
+            text-decoration: none;
+            color: $primary-color;
+            font-family: $fontTitre;
+            // text-shadow: 1px 1px 1px $primary-color;
+          }
+          :nth-child(n):hover {
+            color: $primary-color;
+            font-family: $fontTitre;
+
+            // text-shadow: 1px 1px 1px $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// MOBILE
+@media screen and (max-width: 767px) {
   .header {
     display: flex;
     flex-direction: row;

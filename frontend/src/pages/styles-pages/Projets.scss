@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .projets {
     h1 {
       font-family: $fontText;
@@ -60,57 +60,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      .projets_images_1 {
-        width: 100%;
-        position: relative;
-        .projets_images_1_header {
-          position: absolute;
-          // top: -2%;
-          z-index: 2;
-          left: 17%;
-          color: $background-color;
-          font-family: $fontText;
-          font-size: 25px;
-          margin: 0;
-          // transform: translate(-50%, -50%);
-          // opacity: 0;
-          // transition: opacity 0.7s;
-          color: $primary-color;
-        }
-        img {
-          width: 80%;
-          max-width: 100%;
-          height: 600px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 40%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 25px;
-          h3 {
-            font-size: 2em;
-            margin: 0;
-          }
-          span {
-            font-size: 0.9em;
-          }
-        }
-      }
-      .projets_images_1:hover img {
-        filter: brightness(0.7);
-      }
-      .projets_images_1:hover p {
-        opacity: 1;
-      }
-      .projets_images_2 {
+
+      .projets_images_item {
         width: 100%;
         position: relative;
         img {
@@ -139,312 +90,407 @@
             font-size: 0.9em;
           }
         }
-      }
-      .projets_images_2:hover img {
-        filter: brightness(0.7);
-      }
-      .projets_images_2:hover p {
-        opacity: 1;
       }
 
-      .projets_images_3 {
-        width: 100%;
-        position: relative;
-
-        img {
-          width: 80%;
-          max-width: 100%;
-          height: 600px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 40%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 25px;
-          h3 {
-            font-size: 2em;
-            margin: 0;
-          }
-          span {
-            font-size: 0.9em;
-          }
-        }
-      }
-      .projets_images_3:hover img {
+      .projets_images_item:hover img {
         filter: brightness(0.7);
       }
-      .projets_images_3:hover p {
-        opacity: 1;
-      }
-      .projets_images_4 {
-        width: 100%;
-        position: relative;
-        .projets_images_1_header {
-          position: absolute;
-          // top: -2%;
-          z-index: 2;
-          left: 17%;
-          color: $background-color;
-          font-family: $fontText;
-          font-size: 25px;
-          margin: 0;
-          // transform: translate(-50%, -50%);
-          // opacity: 0;
-          // transition: opacity 0.7s;
-          color: $primary-color;
-        }
-        img {
-          width: 80%;
-          max-width: 100%;
-          height: 600px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 40%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 25px;
-          h3 {
-            font-size: 2em;
-            margin: 0;
-          }
-          span {
-            font-size: 0.9em;
-          }
-        }
-      }
-      .projets_images_4:hover img {
-        filter: brightness(0.7);
-      }
-      .projets_images_4:hover p {
-        opacity: 1;
-      }
-      .projets_images_5 {
-        width: 100%;
-        position: relative;
-        img {
-          width: 80%;
-          max-width: 100%;
-          height: 600px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 40%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 25px;
-          h3 {
-            font-size: 2em;
-            margin: 0;
-          }
-          span {
-            font-size: 0.9em;
-          }
-        }
-      }
-      .projets_images_5:hover img {
-        filter: brightness(0.7);
-      }
-      .projets_images_5:hover p {
-        opacity: 1;
-      }
-      .projets_images_6 {
-        width: 100%;
-        position: relative;
-        .projets_images_1_header {
-          position: absolute;
-          // top: -2%;
-          z-index: 2;
-          left: 17%;
-          color: $background-color;
-          font-family: $fontText;
-          font-size: 25px;
-          margin: 0;
-          // transform: translate(-50%, -50%);
-          // opacity: 0;
-          // transition: opacity 0.7s;
-          color: $primary-color;
-        }
-        img {
-          width: 80%;
-          max-width: 100%;
-          height: 600px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 40%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 25px;
-          h3 {
-            font-size: 2em;
-            margin: 0;
-          }
-          span {
-            font-size: 0.9em;
-          }
-        }
-      }
-      .projets_images_6:hover img {
-        filter: brightness(0.7);
-      }
-      .projets_images_6:hover p {
-        opacity: 1;
-      }
-      .projets_images_7 {
-        width: 100%;
-        position: relative;
-        .projets_images_1_header {
-          position: absolute;
-          // top: -2%;
-          z-index: 2;
-          left: 17%;
-          color: $background-color;
-          font-family: $fontText;
-          font-size: 25px;
-          margin: 0;
-          // transform: translate(-50%, -50%);
-          // opacity: 0;
-          // transition: opacity 0.7s;
-          color: $primary-color;
-        }
-        img {
-          width: 80%;
-          max-width: 100%;
-          height: 600px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 40%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 25px;
-          h3 {
-            font-size: 2em;
-            margin: 0;
-          }
-          span{
-            font-size: 0.9em;
-          }
-        }
-      }
-      .projets_images_7:hover img {
-        filter: brightness(0.7);
-      }
-      .projets_images_7:hover p {
-        opacity: 1;
-      }
-      .projets_images_8 {
-        width: 100%;
-        position: relative;
-        img {
-          width: 80%;
-          max-width: 100%;
-          height: 600px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 40%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 25px;
-          h3 {
-            font-size: 2em;
-            margin: 0;
-          }
-          span {
-            font-size: 0.9em;
-          }
-        }
-      }
-      .projets_images_8:hover img {
-        filter: brightness(0.7);
-      }
-      .projets_images_8:hover p {
-        opacity: 1;
-      }
-      .projets_images_9 {
-        width: 100%;
-        position: relative;
-        img {
-          width: 80%;
-          max-width: 100%;
-          height: 600px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 40%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 25px;
-          h3 {
-            font-size: 2em;
-            margin: 0;
-          }
-          span {
-            font-size: 0.9em;
-          }
-        }
-      }
-      .projets_images_9:hover img {
-        filter: brightness(0.7);
-      }
-      .projets_images_9:hover p {
+      .projets_images_item:hover p {
         opacity: 1;
       }
     }
   }
 }
+
+//     .projets_images {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       .projets_images_1 {
+//         width: 100%;
+//         position: relative;
+//         .projets_images_1_header {
+//           position: absolute;
+//           // top: -2%;
+//           z-index: 2;
+//           left: 17%;
+//           color: $background-color;
+//           font-family: $fontText;
+//           font-size: 25px;
+//           margin: 0;
+//           // transform: translate(-50%, -50%);
+//           // opacity: 0;
+//           // transition: opacity 0.7s;
+//           color: $primary-color;
+//         }
+//         img {
+//           width: 80%;
+//           max-width: 100%;
+//           height: 600px;
+//           padding: 50px 0;
+//           object-fit: cover;
+//           transition: filter 0.7s;
+//         }
+//         p {
+//           position: absolute;
+//           top: 40%;
+//           left: 50%;
+//           transform: translate(-50%, -50%);
+//           color: $background-color;
+//           opacity: 0;
+//           transition: opacity 0.7s;
+//           font-family: $fontText;
+//           font-size: 25px;
+//           h3 {
+//             font-size: 2em;
+//             margin: 0;
+//           }
+//           span {
+//             font-size: 0.9em;
+//           }
+//         }
+//       }
+//       .projets_images_1:hover img {
+//         filter: brightness(0.7);
+//       }
+//       .projets_images_1:hover p {
+//         opacity: 1;
+//       }
+//       .projets_images_2 {
+//         width: 100%;
+//         position: relative;
+//         img {
+//           width: 80%;
+//           max-width: 100%;
+//           height: 600px;
+//           padding: 50px 0;
+//           object-fit: cover;
+//           transition: filter 0.7s;
+//         }
+//         p {
+//           position: absolute;
+//           top: 40%;
+//           left: 50%;
+//           transform: translate(-50%, -50%);
+//           color: $background-color;
+//           opacity: 0;
+//           transition: opacity 0.7s;
+//           font-family: $fontText;
+//           font-size: 25px;
+//           h3 {
+//             font-size: 2em;
+//             margin: 0;
+//           }
+//           span {
+//             font-size: 0.9em;
+//           }
+//         }
+//       }
+//       .projets_images_2:hover img {
+//         filter: brightness(0.7);
+//       }
+//       .projets_images_2:hover p {
+//         opacity: 1;
+//       }
+
+//       .projets_images_3 {
+//         width: 100%;
+//         position: relative;
+
+//         img {
+//           width: 80%;
+//           max-width: 100%;
+//           height: 600px;
+//           padding: 50px 0;
+//           object-fit: cover;
+//           transition: filter 0.7s;
+//         }
+//         p {
+//           position: absolute;
+//           top: 40%;
+//           left: 50%;
+//           transform: translate(-50%, -50%);
+//           color: $background-color;
+//           opacity: 0;
+//           transition: opacity 0.7s;
+//           font-family: $fontText;
+//           font-size: 25px;
+//           h3 {
+//             font-size: 2em;
+//             margin: 0;
+//           }
+//           span {
+//             font-size: 0.9em;
+//           }
+//         }
+//       }
+//       .projets_images_3:hover img {
+//         filter: brightness(0.7);
+//       }
+//       .projets_images_3:hover p {
+//         opacity: 1;
+//       }
+//       .projets_images_4 {
+//         width: 100%;
+//         position: relative;
+//         .projets_images_1_header {
+//           position: absolute;
+//           // top: -2%;
+//           z-index: 2;
+//           left: 17%;
+//           color: $background-color;
+//           font-family: $fontText;
+//           font-size: 25px;
+//           margin: 0;
+//           // transform: translate(-50%, -50%);
+//           // opacity: 0;
+//           // transition: opacity 0.7s;
+//           color: $primary-color;
+//         }
+//         img {
+//           width: 80%;
+//           max-width: 100%;
+//           height: 600px;
+//           padding: 50px 0;
+//           object-fit: cover;
+//           transition: filter 0.7s;
+//         }
+//         p {
+//           position: absolute;
+//           top: 40%;
+//           left: 50%;
+//           transform: translate(-50%, -50%);
+//           color: $background-color;
+//           opacity: 0;
+//           transition: opacity 0.7s;
+//           font-family: $fontText;
+//           font-size: 25px;
+//           h3 {
+//             font-size: 2em;
+//             margin: 0;
+//           }
+//           span {
+//             font-size: 0.9em;
+//           }
+//         }
+//       }
+//       .projets_images_4:hover img {
+//         filter: brightness(0.7);
+//       }
+//       .projets_images_4:hover p {
+//         opacity: 1;
+//       }
+//       .projets_images_5 {
+//         width: 100%;
+//         position: relative;
+//         img {
+//           width: 80%;
+//           max-width: 100%;
+//           height: 600px;
+//           padding: 50px 0;
+//           object-fit: cover;
+//           transition: filter 0.7s;
+//         }
+//         p {
+//           position: absolute;
+//           top: 40%;
+//           left: 50%;
+//           transform: translate(-50%, -50%);
+//           color: $background-color;
+//           opacity: 0;
+//           transition: opacity 0.7s;
+//           font-family: $fontText;
+//           font-size: 25px;
+//           h3 {
+//             font-size: 2em;
+//             margin: 0;
+//           }
+//           span {
+//             font-size: 0.9em;
+//           }
+//         }
+//       }
+//       .projets_images_5:hover img {
+//         filter: brightness(0.7);
+//       }
+//       .projets_images_5:hover p {
+//         opacity: 1;
+//       }
+//       .projets_images_6 {
+//         width: 100%;
+//         position: relative;
+//         .projets_images_1_header {
+//           position: absolute;
+//           // top: -2%;
+//           z-index: 2;
+//           left: 17%;
+//           color: $background-color;
+//           font-family: $fontText;
+//           font-size: 25px;
+//           margin: 0;
+//           // transform: translate(-50%, -50%);
+//           // opacity: 0;
+//           // transition: opacity 0.7s;
+//           color: $primary-color;
+//         }
+//         img {
+//           width: 80%;
+//           max-width: 100%;
+//           height: 600px;
+//           padding: 50px 0;
+//           object-fit: cover;
+//           transition: filter 0.7s;
+//         }
+//         p {
+//           position: absolute;
+//           top: 40%;
+//           left: 50%;
+//           transform: translate(-50%, -50%);
+//           color: $background-color;
+//           opacity: 0;
+//           transition: opacity 0.7s;
+//           font-family: $fontText;
+//           font-size: 25px;
+//           h3 {
+//             font-size: 2em;
+//             margin: 0;
+//           }
+//           span {
+//             font-size: 0.9em;
+//           }
+//         }
+//       }
+//       .projets_images_6:hover img {
+//         filter: brightness(0.7);
+//       }
+//       .projets_images_6:hover p {
+//         opacity: 1;
+//       }
+//       .projets_images_7 {
+//         width: 100%;
+//         position: relative;
+//         .projets_images_1_header {
+//           position: absolute;
+//           // top: -2%;
+//           z-index: 2;
+//           left: 17%;
+//           color: $background-color;
+//           font-family: $fontText;
+//           font-size: 25px;
+//           margin: 0;
+//           // transform: translate(-50%, -50%);
+//           // opacity: 0;
+//           // transition: opacity 0.7s;
+//           color: $primary-color;
+//         }
+//         img {
+//           width: 80%;
+//           max-width: 100%;
+//           height: 600px;
+//           padding: 50px 0;
+//           object-fit: cover;
+//           transition: filter 0.7s;
+//         }
+//         p {
+//           position: absolute;
+//           top: 40%;
+//           left: 50%;
+//           transform: translate(-50%, -50%);
+//           color: $background-color;
+//           opacity: 0;
+//           transition: opacity 0.7s;
+//           font-family: $fontText;
+//           font-size: 25px;
+//           h3 {
+//             font-size: 2em;
+//             margin: 0;
+//           }
+//           span{
+//             font-size: 0.9em;
+//           }
+//         }
+//       }
+//       .projets_images_7:hover img {
+//         filter: brightness(0.7);
+//       }
+//       .projets_images_7:hover p {
+//         opacity: 1;
+//       }
+//       .projets_images_8 {
+//         width: 100%;
+//         position: relative;
+//         img {
+//           width: 80%;
+//           max-width: 100%;
+//           height: 600px;
+//           padding: 50px 0;
+//           object-fit: cover;
+//           transition: filter 0.7s;
+//         }
+//         p {
+//           position: absolute;
+//           top: 40%;
+//           left: 50%;
+//           transform: translate(-50%, -50%);
+//           color: $background-color;
+//           opacity: 0;
+//           transition: opacity 0.7s;
+//           font-family: $fontText;
+//           font-size: 25px;
+//           h3 {
+//             font-size: 2em;
+//             margin: 0;
+//           }
+//           span {
+//             font-size: 0.9em;
+//           }
+//         }
+//       }
+//       .projets_images_8:hover img {
+//         filter: brightness(0.7);
+//       }
+//       .projets_images_8:hover p {
+//         opacity: 1;
+//       }
+//       .projets_images_9 {
+//         width: 100%;
+//         position: relative;
+//         img {
+//           width: 80%;
+//           max-width: 100%;
+//           height: 600px;
+//           padding: 50px 0;
+//           object-fit: cover;
+//           transition: filter 0.7s;
+//         }
+//         p {
+//           position: absolute;
+//           top: 40%;
+//           left: 50%;
+//           transform: translate(-50%, -50%);
+//           color: $background-color;
+//           opacity: 0;
+//           transition: opacity 0.7s;
+//           font-family: $fontText;
+//           font-size: 25px;
+//           h3 {
+//             font-size: 2em;
+//             margin: 0;
+//           }
+//           span {
+//             font-size: 0.9em;
+//           }
+//         }
+//       }
+//       .projets_images_9:hover img {
+//         filter: brightness(0.7);
+//       }
+//       .projets_images_9:hover p {
+//         opacity: 1;
+//       }
+//     }
+//   }
+// }
 // .projets_images_1_text {
 //   position: absolute;
 //   top: 65%;
@@ -466,19 +512,19 @@
 //   }
 // }
 
-@media screen and (max-width: 600px) {
+// TABLETTE 
+@media screen and (max-width: 1023px) {
   .projets {
     h1 {
       font-family: $fontText;
       font-weight: lighter;
       color: $primary-color;
-      font-size: 18px;
+      font-size: 24px;
       text-align: left;
       padding-left: 30px;
       position: relative;
       bottom: 30px;
     }
-    // * * * Ajout de CSS CC * * * //
     .sous_titres_filtres {
       font-family: "Montserrat-Regular";
       font-weight: lighter;
@@ -499,23 +545,111 @@
       color: #003c57;
       padding-bottom: 5px;
       transition: font-weight 0.3s ease;
+      font-size: 16px;
     }
-    
     .sous_titres_filtres span:hover {
       font-weight: bold;
     }
-  
-    
-    .sous_titres_filtres .selected{
-      font-weight: bold;    
+    .sous_titres_filtres .selected {
+      font-weight: bold;
     }
-    // * * * Fin ajout de CSS CC * * * //
     .projets_images {
       display: flex;
       flex-direction: column;
       align-items: center;
+      .projets_images_item {
+        width: 100%;
+        position: relative;
+        transition: 1s;
+        h3 {
+          color: $primary-color;
+          font-size: 25px;
+          margin-bottom: 0;
+        }
+        img {
+          width: 90%;
+          height: 300px;
+          padding: 50px 0;
+          object-fit: cover;
+          transition: filter 0.7s;
+        }
+        p {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: $background-color;
+          opacity: 0;
+          transition: opacity 0.7s;
+          font-family: $fontText;
+          font-size: 13px;
+          width: 75%;
+          h3 {
+            font-size: 25px;
+            margin: 0;
+            color: $background-color;
+          }
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+      .projets_images_item:hover img {
+        filter: brightness(0.4);
+      }
+      .projets_images_item:hover p {
+        opacity: 1;
+      }
+    }
+  }
+}
 
-      .projets_images_1 {
+// MOBILE
+@media screen and (max-width: 727px) {
+  .projets {
+    h1 {
+      font-family: $fontText;
+      font-weight: lighter;
+      color: $primary-color;
+      font-size: 18px;
+      text-align: left;
+      padding-left: 30px;
+      position: relative;
+      bottom: 30px;
+    }
+    .sous_titres_filtres {
+      font-family: "Montserrat-Regular";
+      font-weight: lighter;
+      color: #003c57;
+      font-size: 14px;
+      text-align: left;
+      padding-left: 30px;
+      padding-top: 5px;
+      position: relative;
+      bottom: 20px;
+    }
+    .sous_titres_filtres span {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      color: #003c57;
+      padding-bottom: 5px;
+      transition: font-weight 0.3s ease;
+      font-size: 14px;
+    }
+    .sous_titres_filtres span:hover {
+      font-weight: bold;
+    }
+    .sous_titres_filtres .selected {
+      font-weight: bold;
+    }
+    .projets_images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .projets_images_item {
         width: 100%;
         position: relative;
         transition: 1s;
@@ -552,354 +686,10 @@
           }
         }
       }
-      .projets_images_1:hover img {
+      .projets_images_item:hover img {
         filter: brightness(0.4);
       }
-      .projets_images_1:hover p {
-        opacity: 1;
-      }
-      .projets_images_2 {
-        width: 100%;
-        position: relative;
-        transition: 1s;
-        h3 {
-          color: $primary-color;
-          font-size: 25px;
-          margin-bottom: 0;
-        }
-        img {
-          width: 90%;
-          height: 300px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 13px;
-          width: 75%;
-          h3 {
-            font-size: 25px;
-            margin: 0;
-            color: $background-color;
-          }
-          a {
-            font-size: 18px;
-          }
-        }
-      }
-      .projets_images_2:hover img {
-        filter: brightness(0.4);
-      }
-      .projets_images_2:hover p {
-        opacity: 1;
-      }
-      .projets_images_3 {
-        width: 100%;
-        position: relative;
-        transition: 1s;
-        h3 {
-          color: $primary-color;
-          font-size: 25px;
-          margin-bottom: 0;
-        }
-        img {
-          width: 90%;
-          height: 300px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 13px;
-          width: 75%;
-          h3 {
-            font-size: 25px;
-            margin: 0;
-            color: $background-color;
-          }
-          a {
-            font-size: 18px;
-          }
-        }
-      }
-      .projets_images_3:hover img {
-        filter: brightness(0.4);
-      }
-      .projets_images_3:hover p {
-        opacity: 1;
-      }
-      .projets_images_4 {
-        width: 100%;
-        position: relative;
-        transition: 1s;
-        h3 {
-          color: $primary-color;
-          font-size: 25px;
-          margin-bottom: 0;
-        }
-        img {
-          width: 90%;
-          height: 300px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 13px;
-          width: 75%;
-          h3 {
-            font-size: 25px;
-            margin: 0;
-            color: $background-color;
-          }
-          a {
-            font-size: 18px;
-          }
-        }
-      }
-      .projets_images_4:hover img {
-        filter: brightness(0.4);
-      }
-      .projets_images_4:hover p {
-        opacity: 1;
-      }
-      .projets_images_5 {
-        width: 100%;
-        position: relative;
-        transition: 1s;
-        h3 {
-          color: $primary-color;
-          font-size: 25px;
-          margin-bottom: 0;
-        }
-        img {
-          width: 90%;
-          height: 300px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 13px;
-          width: 75%;
-          h3 {
-            font-size: 25px;
-            margin: 0;
-            color: $background-color;
-          }
-          a {
-            font-size: 18px;
-          }
-        }
-      }
-      .projets_images_5:hover img {
-        filter: brightness(0.4);
-      }
-      .projets_images_5:hover p {
-        opacity: 1;
-      }
-      .projets_images_6 {
-        width: 100%;
-        position: relative;
-        transition: 1s;
-        h3 {
-          color: $primary-color;
-          font-size: 25px;
-          margin-bottom: 0;
-        }
-        img {
-          width: 90%;
-          height: 300px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 13px;
-          width: 75%;
-          h3 {
-            font-size: 25px;
-            margin: 0;
-            color: $background-color;
-          }
-          a {
-            font-size: 18px;
-          }
-        }
-      }
-      .projets_images_6:hover img {
-        filter: brightness(0.4);
-      }
-      .projets_images_6:hover p {
-        opacity: 1;
-      }
-      .projets_images_7 {
-        width: 100%;
-        position: relative;
-        transition: 1s;
-        h3 {
-          color: $primary-color;
-          font-size: 25px;
-          margin-bottom: 0;
-        }
-        img {
-          width: 90%;
-          height: 300px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 13px;
-          width: 75%;
-          h3 {
-            font-size: 25px;
-            margin: 0;
-            color: $background-color;
-          }
-          a {
-            font-size: 18px;
-          }
-        }
-      }
-      .projets_images_7:hover img {
-        filter: brightness(0.4);
-      }
-      .projets_images_7:hover p {
-        opacity: 1;
-      }
-      .projets_images_8 {
-        width: 100%;
-        position: relative;
-        transition: 1s;
-        h3 {
-          color: $primary-color;
-          font-size: 25px;
-          margin-bottom: 0;
-        }
-        img {
-          width: 90%;
-          height: 300px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 13px;
-          width: 75%;
-          h3 {
-            font-size: 25px;
-            margin: 0;
-            color: $background-color;
-          }
-          a {
-            font-size: 18px;
-          }
-        }
-      }
-      .projets_images_8:hover img {
-        filter: brightness(0.4);
-      }
-      .projets_images_8:hover p {
-        opacity: 1;
-      }
-      .projets_images_9 {
-        width: 100%;
-        position: relative;
-        transition: 1s;
-        h3 {
-          color: $primary-color;
-          font-size: 25px;
-          margin-bottom: 0;
-        }
-        img {
-          width: 90%;
-          height: 300px;
-          padding: 50px 0;
-          object-fit: cover;
-          transition: filter 0.7s;
-        }
-        p {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: $background-color;
-          opacity: 0;
-          transition: opacity 0.7s;
-          font-family: $fontText;
-          font-size: 13px;
-          width: 75%;
-          h3 {
-            font-size: 25px;
-            margin: 0;
-            color: $background-color;
-          }
-          a {
-            font-size: 18px;
-          }
-        }
-      }
-      .projets_images_9:hover img {
-        filter: brightness(0.4);
-      }
-      .projets_images_9:hover p {
+      .projets_images_item:hover p {
         opacity: 1;
       }
     }

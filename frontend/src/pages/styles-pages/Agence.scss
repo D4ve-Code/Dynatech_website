@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .agence {
     h1 {
       font-family: $fontText;
@@ -79,7 +79,79 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+// TABLETTE
+@media screen and (max-width: 1023px) {
+  .agence {
+    h1 {
+      font-family: $fontText;
+      font-weight: lighter;
+      color: $primary-color;
+      font-size: 24px;
+      text-align: left;
+      padding-left: 30px;
+      position: relative;
+      bottom: 30px;
+    }
+    .first_p {
+      font-family: $fontText;
+      color: $secondary-color;
+      text-align: center;
+      width: 90vw;
+      font-size: 18px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .valeurs {
+      p {
+        display: flex;
+        justify-content: center;
+        font-family: $fontText;
+        color: $primary-color;
+        font-size: 25px;
+      }
+    }
+    // Modifications CC
+    .portraits {
+      padding-top: 40px;
+
+      .portraits_line {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .divPortrait {
+          max-width: 75%;
+          padding: 0 15px; 
+          margin-bottom: 20px;
+
+          .imgPortrait {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            padding: 0; // enlever le padding superflu
+          }
+
+          .pres {
+            font-family: $fontText;
+            color: $secondary-color;
+            font-size: 16px;
+            width: 65vw;
+            .nom {
+              font-family: $fontTitre;
+              color: $primary-color;
+              font-size: 20px;
+          }
+        }
+      }
+      }
+    }
+  }
+}
+
+// MOBILE
+@media screen and (max-width: 727px) {
   .agence {
     h1 {
       font-family: $fontText;

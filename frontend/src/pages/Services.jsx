@@ -75,7 +75,7 @@ const Services = () => {
               <ul className="liste4">
                 <h4>Laure</h4>
                 <li>33 ans</li>
-                <li>Maitrise les modes opératoires de construction</li>
+                <li>Maîtrise les modes opératoires de construction</li>
                 <li>Bras droit du patron de chantier</li>
                 <li>Persévérante</li>
                 <li>Influente</li>
@@ -107,6 +107,11 @@ const Services = () => {
                 Formation sécurité à destination des Maîtres d'Ouvrages et
                 membres des Comités de Direction (réglementation sécurité, rôles
                 et responsabilité, délégations de pouvoirs, ...)
+              </li>
+              <li>
+                Accompagnement des Maitres d’Œuvre et Entreprises Générales dans
+                l’intégration des enjeux et aspects HSE dans les remises
+                d’offre.
               </li>
             </ul>
           </p>

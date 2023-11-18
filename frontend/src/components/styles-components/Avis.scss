@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .avis {
     .avis_top {
       display: flex;
@@ -259,7 +259,144 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+// TABLETTE
+@media screen and (max-width: 1023px) {
+  .avis {
+    .avis_top {
+      display: flex;
+      flex-direction: column;
+      /* max-width: 80vw; */
+      align-items: center;
+      height: 40vh;
+      margin-top: 20px;
+      .avis_texte {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 100%;
+        .texte1 {
+          font-family: $fontText;
+          color: $primary-color;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          margin: 0 0 30px 0;
+        }
+        .texte2 {
+          font-family: $fontText;
+          color: $secondary-color;
+          width: 90vw;
+          font-size: 18px;
+          text-align: center;
+          margin: 0 0 50px 0;
+        }
+        button {
+          display: none;
+        }
+      }
+      .avis_right {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        // right: 30px;
+        .avis_card {
+          display: flex;
+          background-color: #fff;
+          border-radius: 15px;
+          max-width: 90vw;
+          height: 27vh;
+          .card_left {
+            position: relative;
+            height: 100%;
+            // width: 3000px;
+            .card_left_image_text {
+              display: flex;
+              flex-direction: column;
+              img {
+                width: 50px;
+                height: 50px;
+                border-radius: 15px 0 0 0;
+              }
+              .card_text {
+                font-family: $fontText;
+                color: $fourth-color;
+                width: 90%;
+                text-align: left;
+                padding-left: 10px;
+                font-size: 16px;
+              }
+              .card_name {
+                font-family: $fontText;
+                color: $primary-color;
+                font-size: 14px;
+                width: 90%;
+                padding-left: 10px;
+                text-align: left;
+              }
+            }
+          }
+          .card_right {
+            position: relative;
+            height: 100%;
+            img {
+              height: 100%;
+              width: 35vw;
+              object-fit: cover;
+              border-radius: 0 15px 15px 0;
+            }
+          }
+        }
+        .avis_chiffres {
+          display: none;
+        }
+      }
+    }
+    .avis_bottom {
+      margin-top: 150px;
+      width: 85vw;
+      margin-left: auto;
+      margin-right: auto;
+      .logo-container-wrapper {
+        overflow: hidden; /* Masquez le dépassement */
+        width: 100%; /* Limitez la largeur à 100% de .avis_bottom */
+      }
+      .logo-container {
+        white-space: nowrap; /* Empêche le retour à la ligne des éléments */
+        display: flex;
+        justify-content: space-between;
+        .logo-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        .logodefile {
+          // margin-right: 200px;
+          margin-right: 50px;
+          margin-left: 50px;
+          object-fit: contain;
+        }
+      }
+      }
+      .ligne-noire {
+        height: 1px; /* Épaisseur de la ligne */
+        background-color: $third-color; /* Couleur de la ligne */
+        width: 100%; /* Largeur de la ligne */
+      }
+
+      .ligne-noire-top {
+        margin-bottom: 10px; /* Espacement en-dessous de la ligne */
+      }
+
+      .ligne-noire-bottom {
+        margin-top: 10px; /* Espacement au-dessus de la ligne */
+      }
+    }
+  }
+}
+
+// MOBILE
+@media screen and (max-width: 767px) {
   .avis {
     .avis_top {
       display: flex;
@@ -354,7 +491,7 @@
     }
     .avis_bottom {
       margin-top: 150px;
-      width: 50%;
+      width: 85vw;
       margin-left: auto;
       margin-right: auto;
       .logo-container-wrapper {

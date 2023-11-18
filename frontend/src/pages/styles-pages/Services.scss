@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .services {
     h1 {
       font-family: $fontText;
@@ -227,24 +227,29 @@
           font-family: $fontText;
           color: $secondary-color;
           text-align: center;
-          width: 55vw;
+          width: 60vw;
           font-size: 18px;
           max-width: 80%;
           margin-left: auto;
           margin-right: auto;
+          li {
+            font-size: 16px;
+            margin-bottom: 0.6rem;
+          }
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 600px) {
+//TABLETTE
+@media screen and (max-width: 1023px) {
   .services {
     h1 {
       font-family: $fontText;
       font-weight: lighter;
       color: $primary-color;
-      font-size: 18px;
+      font-size: 24px;
       text-align: left;
       padding-left: 30px;
       position: relative;
@@ -296,7 +301,7 @@
           color: $secondary-color;
           text-align: center;
           width: 90vw;
-          font-size: 15px;
+          font-size: 18px;
           margin-left: auto;
           margin-right: auto;
           position: relative;
@@ -337,7 +342,7 @@
           color: $secondary-color;
           text-align: center;
           width: 90vw;
-          font-size: 15px;
+          font-size: 18px;
           margin-left: auto;
           margin-right: auto;
           position: relative;
@@ -469,13 +474,17 @@
           color: $secondary-color;
           text-align: center;
           width: 90vw;
-          font-size: 15px;
+          font-size: 18px;
           margin-left: auto;
           margin-right: auto;
           position: relative;
           bottom: 50px;
           ul {
             text-align: left;
+            font-size: 14px;
+            li {
+              margin-bottom: 0.8rem;
+            }
           }
         }
       }

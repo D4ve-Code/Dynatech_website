@@ -79,8 +79,8 @@ const Agence = () => {
             <p className="pres">
               <span className="nom">Florian SIRODOT, </span>Chef de Service QSE,
               exerce depuis 15 ans dans les métiers de la Qualité, Sécurité et
-              Environnement.. Manager des consultants et également Coordonnateur
-              SPS, sa maitrise des sujets opérationnels fait de lui un leader
+              Environnement. Manager des consultants et également Coordonnateur
+              SPS, sa maîtrise des sujets opérationnels fait de lui un leader
               dans le domaine !
             </p>
           </div>
