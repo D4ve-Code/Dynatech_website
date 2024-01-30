@@ -63,7 +63,7 @@ const Projets = () => {
           <br />
           Architecte : Atelier M3
           <br />
-          Montant des travaux : 180 m€
+          Montant des travaux : &gt; 100 m€
         </>
       ),
     },
